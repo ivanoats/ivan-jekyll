@@ -1,0 +1,17 @@
+---
+layout: post
+title: Ruby at C4C
+date: '2011-10-21 00:23:00'
+tags:
+- c4c
+- ruby
+- cloudfoundry
+- spreecommerce
+- octopress
+- refinerycms
+---
+
+I gave a presentation at the UW web council on our plans for using the Ruby programming language at the Center for Commercialization.
+
+<div style="width:510px" id="__ss_9680493"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/ivanoats/ruby-presso-web-council" title="Ruby at UW C4C" target="_blank">Ruby at UW C4C</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/9680493?rel=0" width="510" height="426" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/ivanoats" target="_blank">Ivan Storck</a> </div> </div>
+

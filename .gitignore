@@ -1,0 +1,5 @@
+_site
+.sass-cache
+.jekyll-metadata
+ghost.db
+ivan-storck.ghost.2017-03-24.json
