@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: How to Run a basic Rack App on Cloud9
 date: '2013-01-14 21:55:00'
 tags:

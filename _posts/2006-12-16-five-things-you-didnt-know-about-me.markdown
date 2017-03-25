@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Five things you didn't know about me
 date: '2006-12-16 20:00:00'
 tags:

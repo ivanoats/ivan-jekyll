@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: The Four Directions of Project Management
 date: '2005-10-17 19:00:00'
 ---

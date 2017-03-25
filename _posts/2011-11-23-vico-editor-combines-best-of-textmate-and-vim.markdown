@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Vico Editor Combines Best of TextMate and Vim
 date: '2011-11-23 17:39:00'
 tags:

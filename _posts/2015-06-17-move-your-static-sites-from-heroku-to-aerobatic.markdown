@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Move Your Static Sites From Heroku to Aerobatic
 date: '2015-06-17 19:30:26'
 tags:

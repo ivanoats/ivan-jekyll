@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: How to  Set Up Your First Minispec Project from Scratch
 date: '2014-03-02 06:35:00'
 tags:

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: U.S. Junk Mail Accounts for One Third of All World Mail!
 date: '2008-03-25 19:00:00'
 tags:

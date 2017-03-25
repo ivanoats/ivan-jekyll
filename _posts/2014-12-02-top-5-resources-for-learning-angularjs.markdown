@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Students' Top 5 Resources For Learning AngularJS
 date: '2014-12-02 22:16:33'
 tags:

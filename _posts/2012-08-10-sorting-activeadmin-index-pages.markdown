@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Sorting ActiveAdmin Index Pages
 date: '2012-08-10 19:57:00'
 tags:

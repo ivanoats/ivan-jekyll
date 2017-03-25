@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'Ember, Part 1: Why I Use Ember and You Should Too'
 date: '2014-05-15 19:00:00'
 tags:

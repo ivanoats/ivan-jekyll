@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 5 Ways to Manage Front-End Assets in Rails
 date: '2013-11-15 20:00:00'
 tags:

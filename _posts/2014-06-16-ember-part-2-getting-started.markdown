@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'Ember, Part 2: Getting started'
 date: '2014-06-16 19:00:00'
 tags:

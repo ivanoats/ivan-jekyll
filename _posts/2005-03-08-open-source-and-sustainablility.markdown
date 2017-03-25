@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Open Source and Sustainablility
 date: '2005-03-08 20:00:00'
 tags:

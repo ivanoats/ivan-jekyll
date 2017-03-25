@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: How to Host a NodeJS App on an EC2 Ubuntu Server
 date: '2014-05-13 19:00:00'
 tags:

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: How Evan Moran replaced CSS-HTML-JS with OJJS
 date: '2013-09-15 19:00:00'
 tags:

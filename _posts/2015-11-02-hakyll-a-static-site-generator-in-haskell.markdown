@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Hakyll, a static site generator in Haskell
 date: '2015-11-02 18:22:57'
 tags:

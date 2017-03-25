@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: How to add Sitemap.xml to a GatsbyJS site
 date: '2016-09-12 22:17:51'
 tags:

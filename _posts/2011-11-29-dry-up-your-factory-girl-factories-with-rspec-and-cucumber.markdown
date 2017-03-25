@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: DRY Up Your Factory Girl Factories With RSpec and Cucumber
 date: '2011-11-29 05:19:00'
 tags:

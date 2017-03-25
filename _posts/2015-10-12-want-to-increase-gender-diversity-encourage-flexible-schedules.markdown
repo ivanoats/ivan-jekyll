@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Want to Increase Gender Diversity? Encourage Flexible Schedules
 date: '2015-10-12 16:36:00'
 tags:

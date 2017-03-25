@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Setting up Secure Websites Just Got Much Easier
 date: '2016-04-26 16:35:23'
 tags:

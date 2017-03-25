@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: How to Get the Purchase Order Field Working in the PayPal Payflow Gateway for
   the ActiveMerchant gem
 date: '2012-09-13 22:53:00'

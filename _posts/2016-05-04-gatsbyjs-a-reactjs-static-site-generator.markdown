@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Hosting GatsbyJS - A React Static Site Generator
 date: '2016-05-04 03:54:47'
 tags:

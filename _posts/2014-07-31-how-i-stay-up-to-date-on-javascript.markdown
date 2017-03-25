@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: How I stay up to date on JavaScript
 date: '2014-07-31 19:00:00'
 tags:

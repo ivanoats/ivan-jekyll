@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Ruby at C4C
 date: '2011-10-21 00:23:00'
 tags:

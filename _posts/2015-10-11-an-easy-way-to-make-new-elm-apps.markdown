@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: An Easy Way to Make New Elm Apps
 date: '2015-10-11 17:00:00'
 tags:

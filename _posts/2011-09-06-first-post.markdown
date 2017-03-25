@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: First Post
 date: '2011-09-06 19:00:00'
 tags:

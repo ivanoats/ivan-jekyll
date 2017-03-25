@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Hosting Phenomic Static Sites on Aerobatic
 date: '2017-02-20 19:18:28'
 tags:

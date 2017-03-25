@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Introducing Pint, the new build system for Grunt.js
 date: '2014-02-27 20:00:00'
 tags:

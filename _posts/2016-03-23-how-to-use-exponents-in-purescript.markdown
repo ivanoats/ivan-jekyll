@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: How to use exponents in PureScript
 date: '2016-03-23 20:52:42'
 tags:

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: A List of Foundational JavaScript  Tools
 date: '2014-02-28 20:00:00'
 tags:

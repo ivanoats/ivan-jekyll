@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Interviewed on Carbon Offsets Daily
 date: '2008-07-23 19:00:00'
 ---

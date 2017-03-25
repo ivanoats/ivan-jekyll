@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: A Tiny Easy Webserver for Test Project Directories
 date: '2013-11-14 17:23:00'
 tags:

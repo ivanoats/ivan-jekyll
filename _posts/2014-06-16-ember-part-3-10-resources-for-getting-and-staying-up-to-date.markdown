@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'Ember, Part 3: 10 resources for getting (and staying) up to date'
 date: '2014-06-16 19:00:00'
 tags:

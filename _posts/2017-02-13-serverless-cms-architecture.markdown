@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: A Serverless CMS Architecture
 date: '2017-02-13 17:26:00'
 tags:

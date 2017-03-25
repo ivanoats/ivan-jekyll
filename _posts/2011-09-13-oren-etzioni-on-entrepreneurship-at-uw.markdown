@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Oren Etzioni on Entrepreneurship at UW
 date: '2011-09-13 19:01:00'
 tags:

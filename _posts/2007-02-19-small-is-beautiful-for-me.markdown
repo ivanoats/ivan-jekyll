@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Small is Beautiful (for me)
 date: '2007-02-19 20:00:00'
 tags:

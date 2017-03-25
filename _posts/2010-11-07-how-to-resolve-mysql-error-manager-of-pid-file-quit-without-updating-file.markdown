@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'How to resolve MySQL: ERROR! Manager of pid-file quit without updating file'
 date: '2010-11-07 20:00:00'
 ---

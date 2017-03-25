@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: About Ivan
 date: '2011-12-03 21:09:00'
 tags:

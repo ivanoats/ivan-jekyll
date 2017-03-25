@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Introducing the Full-Stack Modular Boilerplate
 date: '2014-12-11 23:47:04'
 tags:

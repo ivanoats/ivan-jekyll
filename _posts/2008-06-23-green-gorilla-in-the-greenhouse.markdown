@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Green Gorilla in the Greenhouse
 date: '2008-06-23 19:00:00'
 ---

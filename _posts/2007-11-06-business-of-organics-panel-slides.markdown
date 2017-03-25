@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Business of Organics Panel Slides
 date: '2007-11-06 20:00:00'
 tags:

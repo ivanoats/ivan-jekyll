@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'Lodge-On-Wheels: shed heaven'
 date: '2008-10-24 19:00:00'
 tags:

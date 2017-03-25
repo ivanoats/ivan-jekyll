@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Making MacVim Pretty
 date: '2012-01-13 22:29:00'
 tags:

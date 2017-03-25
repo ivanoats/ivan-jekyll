@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: How to host your static web site with HexoJS
 date: '2015-10-20 03:30:11'
 tags:

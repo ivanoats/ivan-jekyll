@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 10 reasons Why I Like Slack and Think You Should Try It
 date: '2014-06-30 19:00:00'
 ---

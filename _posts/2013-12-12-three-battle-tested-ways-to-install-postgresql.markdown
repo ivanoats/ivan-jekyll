@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Three Battle Tested Ways to Install PostgreSQL
 date: '2013-12-12 20:00:00'
 tags:

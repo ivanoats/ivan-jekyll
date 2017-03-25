@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Buy vs. Build at Startups
 date: '2013-04-18 16:54:00'
 tags:

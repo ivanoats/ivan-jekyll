@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Code Fellows adds ReactJS to the JavaScript Development Accelerator
 date: '2014-12-12 20:42:27'
 tags:

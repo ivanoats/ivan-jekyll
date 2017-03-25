@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Epic Install Post is Epic
 date: '2014-12-18 05:58:02'
 tags:

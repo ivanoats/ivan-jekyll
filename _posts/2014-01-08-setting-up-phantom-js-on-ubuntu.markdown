@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Setting up Phantom.js on Ubuntu
 date: '2014-01-08 23:40:00'
 tags:

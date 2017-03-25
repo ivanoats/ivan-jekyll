@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Good Magazine Article on Greenwashing
 date: '2007-04-19 19:00:00'
 tags:

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: The Triple Bottom Line Still Includes People
 date: '2006-12-09 20:00:00'
 tags:

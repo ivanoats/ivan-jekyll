@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Is it Cold Enough for Beer Outside?
 date: '2016-03-09 23:03:00'
 tags:

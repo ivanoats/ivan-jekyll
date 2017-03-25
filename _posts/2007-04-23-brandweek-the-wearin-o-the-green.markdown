@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'Brandweek: The Wearin'' o'' the Green'
 date: '2007-04-23 19:00:00'
 tags:

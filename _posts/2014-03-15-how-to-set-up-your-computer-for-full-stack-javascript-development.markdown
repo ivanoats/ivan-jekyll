@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: How to Set Up Your Computer for Full-Stack JavaScript Development
 date: '2014-03-15 19:00:00'
 tags:

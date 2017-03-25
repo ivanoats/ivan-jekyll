@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Testing Ruby on Rails Obfuscated Email Addresses with RSpec
 date: '2011-12-05 23:26:00'
 tags:

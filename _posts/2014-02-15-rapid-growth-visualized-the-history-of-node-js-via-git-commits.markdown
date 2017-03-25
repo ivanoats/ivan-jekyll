@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'Rapid Growth Visualized: The History of Node.js via Git Commits'
 date: '2014-02-15 20:00:00'
 tags:

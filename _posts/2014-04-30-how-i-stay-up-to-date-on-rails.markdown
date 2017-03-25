@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: How I Stay Up to Date on Rails
 date: '2014-04-30 19:00:00'
 tags:

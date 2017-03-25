@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'Postgres Exited with code: 1'
 date: '2013-04-03 19:38:00'
 tags:

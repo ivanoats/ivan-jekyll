@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: How does the UW Certificate Differ from Code Fellows Bootcamps?
 date: '2013-09-17 22:15:00'
 tags:

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: An Easier Way to Call an API From Your Web App
 date: '2015-08-19 17:20:59'
 tags:
