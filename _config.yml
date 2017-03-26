@@ -33,7 +33,7 @@ title                    : "Ivan Storck - Homepage and Blog"
 title_separator          : "-"
 name                     : "Ivan Storck"
 description              : "Web Developer, Teacher, and Entrepreneur"
-url: "https://ivanstorck.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ivanstorck.aerobatic.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ivanoats/ivan-jekyll" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -111,18 +111,18 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/ivanoats"
+  github           : "ivanoats"
   google_plus      :
   keybase          :
-  instagram        : "https://www.instagram.com/ivanoats"
+  instagram        : "ivanoats"
   lastfm           :
-  linkedin         : "http://www.linkedin.com/in/ivanoats"
+  linkedin         : "ivanoats"
   pinterest        :
   soundcloud       :
   stackoverflow    : "394133/ivan" # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          : "https://twitter.com/ivanoats"
+  twitter          : "ivanoats"
   vine             :
   weibo            :
   xing             :
