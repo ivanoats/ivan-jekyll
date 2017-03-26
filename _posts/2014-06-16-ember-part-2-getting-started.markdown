@@ -53,68 +53,84 @@ Edit `app/routes/index.js`:
 2. A dummy data variable:
 
 <br>
-    
-    import Ember from 'ember';
-    
-    export default Ember.Route.extend({
-      model: function() {
-	    return data.result;
-      }
-	});
 
-	var data = {
-	  "status": "ok",
-	    "result": [
-    	  { noteBody: "Twilight Sparkle"},
-    	  { noteBody: "Applejack"},
-    	  { noteBody: "Fluttershy"},
-    	  { noteBody: "Rarity"},
-    	  { noteBody: "Pinkie Pie"},
-    	  { nodeBody: "Rainbow Dash"}
-  	  ]
-	};
+```javascript
+
+import Ember from 'ember';
+
+export default Ember.Route.extend({
+  model: function() {
+    return data.result;
+  }
+});
+
+var data = {
+  "status": "ok",
+    "result": [
+      { noteBody: "Twilight Sparkle"},
+      { noteBody: "Applejack"},
+      { noteBody: "Fluttershy"},
+      { noteBody: "Rarity"},
+      { noteBody: "Pinkie Pie"},
+      { nodeBody: "Rainbow Dash"}
+    ]
+};
+```
 
 And in `app/templates/index.hbs`:
 
-	{{#each this}}
-  		<li>{{noteBody}}</li>
-	{{/each}}
+{% raw %}
+```hbs
+{{#each this}}
+      <li>{{noteBody}}</li>
+{{/each}}
+```
+{% endraw %}
 
 Now let's add images to your data. Add a picture attribute, something like this:
 
-	"result": [
-      {
-        noteBody: "Twilight Sparkle",
-		picture: "http://img4.wikia.nocookie.net/__cb20140420032412/mlp/images/thumb/e/e0/Twilight_Sparkle_after_drying_herself_S1E03.png/209px-Twilight_Sparkle_after_drying_herself_S1E03.png"
-      },
-      {
-        noteBody: "Applejack",
-        picture: "http://img3.wikia.nocookie.net/__cb20121029101939/mlp/images/thumb/e/ee/Applejack_proud_of_herself_S1E01.png/209px-Applejack_proud_of_herself_S1E01.png"
-      },
-   	]
+```javascript
+"result": [
+  {
+    noteBody: "Twilight Sparkle",
+    picture: "http://img4.wikia.nocookie.net/__cb20140420032412/mlp/images/thumb/e/e0/Twilight_Sparkle_after_drying_herself_S1E03.png/209px-Twilight_Sparkle_after_drying_herself_S1E03.png"
+  },
+  {
+    noteBody: "Applejack",
+    picture: "http://img3.wikia.nocookie.net/__cb20121029101939/mlp/images/thumb/e/ee/Applejack_proud_of_herself_S1E01.png/209px-Applejack_proud_of_herself_S1E01.png"
+  },
+   ]
+```
 
 And in your `index.hbs`:
 
-	{{#each this}}
-  	  <li>
-    	<img {{bind-attr src="picture"}} />
-    	{{noteBody}}
-  	  </li>
-	{{/each}}
+{% raw %}
+```hbs
+{{#each this}}
+    <li>
+    <img {{bind-attr src="picture"}} />
+    {{noteBody}}
+    </li>
+{{/each}}
+```
+{% endraw %}
 
 Now with more ponies!
 
 ### Two-way Data Binding
 
 In `index.hbs`:
+{% raw %}
+```hbs
+<div>
+{{input type="text" value=name placeholder="Enter your pony name"}}
+</div>
 
-	<div>
-	{{input type="text" value=name placeholder="Enter your pony name"}}
-	</div>
-
-	<div>
-	  <p>Hello, my pony name is: <b>{{name}}</b>, and I think Ember is great!</p>
-	</div>
+<div>
+  <p>Hello, my pony name is: <b>{{name}}</b>, and I think Ember is great!</p>
+</div>
+```
+{% endraw %}
 
 ### More on Ember CLI
 

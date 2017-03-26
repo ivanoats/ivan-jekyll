@@ -1,6 +1,0 @@
----
-layout: single
-title: About
-date: '2016-05-06 19:38:37'
----
-
