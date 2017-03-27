@@ -20,3 +20,4 @@ desc "localhost serve"
 task :serve do
   sh "bundle exec jekyll serve"
 end
+task :s => :serve 
