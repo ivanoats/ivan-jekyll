@@ -7,4 +7,7 @@ header:
   image: /assets/images/ivan-smiling-teaching-cropped.jpg
 author_profile: true
 ---
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+
+Ivan Storck has been programming, teaching, and leading start-ups for 20 years. He has been on the founding team of two training companies, two web hosting companies, and taught at the University of Washington. Ivan enjoys staying current with the fast pace of technology trends. He focuses on an agile, open-source, and human-centered design approach to building web apps with JavaScript, Node, and the latest cloud systems.
+
+Ivan lives in Seattle, and works for [Aerobatic](https://www.aerobatic.com). Outside of work, you can find him on a Stand-Up-Paddleboard in Puget Sound, hanging at home with his wife and sons, or building Legos when it rains.

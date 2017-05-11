@@ -13,6 +13,8 @@ gem "jekyll", "3.4.3"
 
 gem "minimal-mistakes-jekyll"
 
+gem "growl"
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
@@ -23,4 +25,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Build tool
 gem 'rake'
-
