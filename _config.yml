@@ -33,7 +33,7 @@ title                    : "Ivan Storck"
 title_separator          : "-"
 name                     : "Ivan Storck"
 description              : "Web Developer, Teacher, and Entrepreneur"
-url: "https://ivanstorck.aerobatic.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ivanstorck.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ivanoats/ivan-jekyll" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
