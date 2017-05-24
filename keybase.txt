@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/ivanoats
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ivanstorck.com
+  * I am ivanoats (https://keybase.io/ivanoats) on keybase.
+  * I have a public key ASAxk55z1205Nr44DPM-dWIFIU93AYQQl3LDS13kHDfEugo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010154c1cfaa4ab2f1ef0f5d53b113940a8dcacbf57ab4c81a246b44e8292ce3a8d60a",
+            "host": "keybase.io",
+            "kid": "012031939e73d76d3936be380cf33e756205214f770184109772c34b5de41c37c4ba0a",
+            "uid": "6001c6550fdebc6d2b60e48999f53600",
+            "username": "ivanoats"
+        },
+        "service": {
+            "hostname": "ivanstorck.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.22"
+    },
+    "ctime": 1495641187,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1495641172,
+        "hash": "a933d449293d31d8d479a29a4bde49a9ba6147cf591b61e132f66ab0360185c945da2cb0165979a8a42994a9e7deb59ff4d79ab909defee5dde07c1e1f509f3f",
+        "seqno": 1106681
+    },
+    "prev": "ef08e48fe63afdbb489195a33fcf58c3768c8d403226908db68b5ccf136d6761",
+    "seqno": 29,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgMZOec9dtOTa+OAzzPnViBSFPdwGEEJdyw0td5Bw3xLoKp3BheWxvYWTFAvh7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxNTRjMWNmYWE0YWIyZjFlZjBmNWQ1M2IxMTM5NDBhOGRjYWNiZjU3YWI0YzgxYTI0NmI0NGU4MjkyY2UzYThkNjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMzE5MzllNzNkNzZkMzkzNmJlMzgwY2YzM2U3NTYyMDUyMTRmNzcwMTg0MTA5NzcyYzM0YjVkZTQxYzM3YzRiYTBhIiwidWlkIjoiNjAwMWM2NTUwZmRlYmM2ZDJiNjBlNDg5OTlmNTM2MDAiLCJ1c2VybmFtZSI6Iml2YW5vYXRzIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJpdmFuc3RvcmNrLmNvbSIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjIyIn0sImN0aW1lIjoxNDk1NjQxMTg3LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0OTU2NDExNzIsImhhc2giOiJhOTMzZDQ0OTI5M2QzMWQ4ZDQ3OWEyOWE0YmRlNDlhOWJhNjE0N2NmNTkxYjYxZTEzMmY2NmFiMDM2MDE4NWM5NDVkYTJjYjAxNjU5NzlhOGE0Mjk5NGE5ZTdkZWI1OWZmNGQ3OWFiOTA5ZGVmZWU1ZGRlMDdjMWUxZjUwOWYzZiIsInNlcW5vIjoxMTA2NjgxfSwicHJldiI6ImVmMDhlNDhmZTYzYWZkYmI0ODkxOTVhMzNmY2Y1OGMzNzY4YzhkNDAzMjI2OTA4ZGI2OGI1Y2NmMTM2ZDY3NjEiLCJzZXFubyI6MjksInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAdmGzWdZcrivPCFdW+UiICk6IzujH2uDvIG8410GumM8hsDrZCNTyQy/qHbtOQWV7y70pXIfGC0ifOYyH1N2zAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJwWk8ykH1dK5QMx9512saTppWbpojs4KtjIuNwqYXG1o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ivanoats
+
+==================================================================
