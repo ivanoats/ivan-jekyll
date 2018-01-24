@@ -4,47 +4,48 @@ https://keybase.io/ivanoats
 
 I hereby claim:
 
-  * I am an admin of https://ivanstorck.com
+  * I am an admin of https://www.ivanstorck.com
   * I am ivanoats (https://keybase.io/ivanoats) on keybase.
   * I have a public key ASAxk55z1205Nr44DPM-dWIFIU93AYQQl3LDS13kHDfEugo
 
 To do so, I am signing this object:
 
 {
-    "body": {
-        "key": {
-            "eldest_kid": "010154c1cfaa4ab2f1ef0f5d53b113940a8dcacbf57ab4c81a246b44e8292ce3a8d60a",
-            "host": "keybase.io",
-            "kid": "012031939e73d76d3936be380cf33e756205214f770184109772c34b5de41c37c4ba0a",
-            "uid": "6001c6550fdebc6d2b60e48999f53600",
-            "username": "ivanoats"
-        },
-        "service": {
-            "hostname": "ivanstorck.com",
-            "protocol": "https:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "010154c1cfaa4ab2f1ef0f5d53b113940a8dcacbf57ab4c81a246b44e8292ce3a8d60a",
+      "host": "keybase.io",
+      "kid": "012031939e73d76d3936be380cf33e756205214f770184109772c34b5de41c37c4ba0a",
+      "uid": "6001c6550fdebc6d2b60e48999f53600",
+      "username": "ivanoats"
     },
-    "client": {
-        "name": "keybase.io go client",
-        "version": "1.0.22"
-    },
-    "ctime": 1495641187,
-    "expire_in": 504576000,
     "merkle_root": {
-        "ctime": 1495641172,
-        "hash": "a933d449293d31d8d479a29a4bde49a9ba6147cf591b61e132f66ab0360185c945da2cb0165979a8a42994a9e7deb59ff4d79ab909defee5dde07c1e1f509f3f",
-        "seqno": 1106681
+      "ctime": 1507049899,
+      "hash": "2f76b5da6f6f14f844f015ac545a7e02d3a319f7bd6b62703ebbcbb766e2902b883a233a5de3f7e34b2b9b03620a71a01dce602645a29eff2bdb5372c672a67a",
+      "hash_meta": "009564378799b219f940c75cb353e390a5480e304aa157fc165bff4784a8d793",
+      "seqno": 1489715
     },
-    "prev": "ef08e48fe63afdbb489195a33fcf58c3768c8d403226908db68b5ccf136d6761",
-    "seqno": 29,
-    "tag": "signature"
+    "service": {
+      "hostname": "www.ivanstorck.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.32"
+  },
+  "ctime": 1507049908,
+  "expire_in": 504576000,
+  "prev": "9302cb69e88e051230a6c0594bb15cb94afece467a2db3be3ac9e45fb44ba33d",
+  "seqno": 35,
+  "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgMZOec9dtOTa+OAzzPnViBSFPdwGEEJdyw0td5Bw3xLoKp3BheWxvYWTFAvh7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxNTRjMWNmYWE0YWIyZjFlZjBmNWQ1M2IxMTM5NDBhOGRjYWNiZjU3YWI0YzgxYTI0NmI0NGU4MjkyY2UzYThkNjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMzE5MzllNzNkNzZkMzkzNmJlMzgwY2YzM2U3NTYyMDUyMTRmNzcwMTg0MTA5NzcyYzM0YjVkZTQxYzM3YzRiYTBhIiwidWlkIjoiNjAwMWM2NTUwZmRlYmM2ZDJiNjBlNDg5OTlmNTM2MDAiLCJ1c2VybmFtZSI6Iml2YW5vYXRzIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJpdmFuc3RvcmNrLmNvbSIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjIyIn0sImN0aW1lIjoxNDk1NjQxMTg3LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0OTU2NDExNzIsImhhc2giOiJhOTMzZDQ0OTI5M2QzMWQ4ZDQ3OWEyOWE0YmRlNDlhOWJhNjE0N2NmNTkxYjYxZTEzMmY2NmFiMDM2MDE4NWM5NDVkYTJjYjAxNjU5NzlhOGE0Mjk5NGE5ZTdkZWI1OWZmNGQ3OWFiOTA5ZGVmZWU1ZGRlMDdjMWUxZjUwOWYzZiIsInNlcW5vIjoxMTA2NjgxfSwicHJldiI6ImVmMDhlNDhmZTYzYWZkYmI0ODkxOTVhMzNmY2Y1OGMzNzY4YzhkNDAzMjI2OTA4ZGI2OGI1Y2NmMTM2ZDY3NjEiLCJzZXFubyI6MjksInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAdmGzWdZcrivPCFdW+UiICk6IzujH2uDvIG8410GumM8hsDrZCNTyQy/qHbtOQWV7y70pXIfGC0ifOYyH1N2zAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJwWk8ykH1dK5QMx9512saTppWbpojs4KtjIuNwqYXG1o3RhZ80CAqd2ZXJzaW9uAQ==
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgMZOec9dtOTa+OAzzPnViBSFPdwGEEJdyw0td5Bw3xLoKp3BheWxvYWTFA0t7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxNTRjMWNmYWE0YWIyZjFlZjBmNWQ1M2IxMTM5NDBhOGRjYWNiZjU3YWI0YzgxYTI0NmI0NGU4MjkyY2UzYThkNjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMzE5MzllNzNkNzZkMzkzNmJlMzgwY2YzM2U3NTYyMDUyMTRmNzcwMTg0MTA5NzcyYzM0YjVkZTQxYzM3YzRiYTBhIiwidWlkIjoiNjAwMWM2NTUwZmRlYmM2ZDJiNjBlNDg5OTlmNTM2MDAiLCJ1c2VybmFtZSI6Iml2YW5vYXRzIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTA3MDQ5ODk5LCJoYXNoIjoiMmY3NmI1ZGE2ZjZmMTRmODQ0ZjAxNWFjNTQ1YTdlMDJkM2EzMTlmN2JkNmI2MjcwM2ViYmNiYjc2NmUyOTAyYjg4M2EyMzNhNWRlM2Y3ZTM0YjJiOWIwMzYyMGE3MWEwMWRjZTYwMjY0NWEyOWVmZjJiZGI1MzcyYzY3MmE2N2EiLCJoYXNoX21ldGEiOiIwMDk1NjQzNzg3OTliMjE5Zjk0MGM3NWNiMzUzZTM5MGE1NDgwZTMwNGFhMTU3ZmMxNjViZmY0Nzg0YThkNzkzIiwic2Vxbm8iOjE0ODk3MTV9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoid3d3Lml2YW5zdG9yY2suY29tIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMzIifSwiY3RpbWUiOjE1MDcwNDk5MDgsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiOTMwMmNiNjllODhlMDUxMjMwYTZjMDU5NGJiMTVjYjk0YWZlY2U0NjdhMmRiM2JlM2FjOWU0NWZiNDRiYTMzZCIsInNlcW5vIjozNSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxECWSnNPJyaqrDcp43Pu/Bt1MnlRdrm0HIzOz2S3REesreQPYdBz535ZSS46rqJp2zlwjaQ7cIg9BjKateLY4QALqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgDmnY+1aa8avt73vPWxliDwsyAd4wivhhL6Eb/5OasBmjdGFnzQICp3ZlcnNpb24B
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
