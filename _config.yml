@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 twitter_username: ivanoats
-github_username:  ivanoats
+github_username: ivanoats
 
 # Build settings
 theme: minimal-mistakes-jekyll
@@ -28,106 +28,104 @@ theme: minimal-mistakes-jekyll
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en"
-title                    : "Ivan Storck"
-title_separator          : "-"
-name                     : "Ivan Storck"
-description              : "Web Developer, Teacher, and Entrepreneur"
+locale: "en"
+title: "Ivan Storck"
+title_separator: "-"
+name: "Ivan Storck"
+description: "Web Developer, Catographer, and Aerial Photographer"
 url: "https://www.ivanstorck.com" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "ivanoats/ivan-jekyll" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+baseurl: # the subpath of your site, e.g. "/blog"
+repository: "ivanoats/ivan-jekyll" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute: 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider: # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    appid:
+    num_posts: # 5 (default)
+    colorscheme: # "light" (default), "dark"
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "master"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "docs/_data/comments/{options.slug}" # "/_data/comments/{options.slug}" (default)
-  requiredFields         : ['name', 'email', 'message']
+  allowedFields: ["name", "email", "url", "message"]
+  branch: "master"
+  commitMessage: "New comment."
+  filename: comment-{@timestamp}
+  format: "yml"
+  moderation: true
+  path: "docs/_data/comments/{options.slug}" # "/_data/comments/{options.slug}" (default)
+  requiredFields: ["name", "email", "message"]
   transforms:
-    email                : "md5"
+    email: "md5"
   generatedFields:
     date:
-      type               : "date"
+      type: "date"
       options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format: "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  path                   : # blank (default) uses feed.xml
+  path: # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
+google_site_verification:
+bing_site_verification:
+alexa_site_verification:
+yandex_site_verification:
 
 # Social Sharing
 twitter:
-  username               : ivanoats
+  username: ivanoats
 facebook:
-  username               : ivanoats
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
+  username: ivanoats
+  app_id:
+  publisher:
+og_image: # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type: # Person or Organization (defaults to Person)
+  name: # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
 # Analytics
 analytics:
-  provider               : google # false (default), "google", "google-universal", "custom"
+  provider: google # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-3487613-8"
-
+    tracking_id: "UA-3487613-8"
 
 # Site Author
 author:
-  name             : "Ivan Storck"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Web Developer, Teacher, Entrepreneur"
-  location         : "Seattle, WA, USA"
-  email            : "ivanoats@gmail.com"
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
-  github           : "ivanoats"
-  google_plus      :
-  keybase          :
-  instagram        : "ivanoats"
-  lastfm           :
-  linkedin         : "ivanoats"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : "394133/ivan" # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
-  steam            :
-  tumblr           :
-  twitter          : "ivanoats"
-  vine             :
-  weibo            :
-  xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
-
+  name: "Ivan Storck"
+  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: "Web Developer, Teacher, Entrepreneur"
+  location: "Seattle, WA, USA"
+  email: "ivanoats@gmail.com"
+  uri:
+  bitbucket:
+  codepen:
+  dribbble:
+  flickr:
+  facebook:
+  foursquare:
+  github: "ivanoats"
+  google_plus:
+  keybase:
+  instagram: "ivanoats"
+  lastfm:
+  linkedin: "ivanoats"
+  pinterest:
+  soundcloud:
+  stackoverflow: "394133/ivan" # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
+  steam:
+  tumblr:
+  twitter: "ivanoats"
+  vine:
+  weibo:
+  xing:
+  youtube: # "https://youtube.com/c/MichaelRoseDesign"
 
 # Reading Files
 include:
@@ -165,14 +163,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -185,19 +181,16 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
 
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /blog/page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
 
 # Plugins
 plugins:
@@ -214,7 +207,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-
 
 # Archives
 #  Type
@@ -244,14 +236,12 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
-
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
-
 
 # Defaults
 defaults:
