@@ -100,7 +100,7 @@ analytics:
 author:
   name: "Ivan Storck"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Web Developer, Teacher, Entrepreneur"
+  bio: "Web Developer, Cartographer, Photographer"
   location: "Seattle, WA, USA"
   email: "ivanoats@gmail.com"
   uri:
@@ -201,6 +201,10 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - jekyll-responsive-image
+  - jekyll-purgecss
+
+# purgecss
+# css-dir: "assets/css"
 
 # mimic GitHub Pages with --safe
 whitelist:

@@ -1,0 +1,22 @@
+{
+  "name": "ivan-jekyll",
+  "version": "1.0.0",
+  "description": "homepage for ivan storck",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanoats/ivan-jekyll.git"
+  },
+  "author": "Ivan Storck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivanoats/ivan-jekyll/issues"
+  },
+  "homepage": "https://github.com/ivanoats/ivan-jekyll#readme",
+  "devDependencies": {
+    "purgecss": "^2.1.0"
+  }
+}
