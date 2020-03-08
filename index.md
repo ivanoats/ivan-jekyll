@@ -3,8 +3,10 @@ layout: single
 title: "Web Developer, Cartographer, Aerial Photographer"
 excerpt: "Ivan Storck is a web developer with a focus on teaching, cartography and geospatial data, and aerial photography."
 header:
-  image: /assets/images/ivan-smiling-teaching-cropped.jpg
-  image-mobile: /assets/images/ivan-smiling-teaching-cropped@0.5x.jpg
+  image: /assets/images/ivan-smiling-teaching-1752w.jpg
+  image_width: 1752w
+  image_mobile: /assets/images/ivan-smiling-teaching-876w.jpg
+  image_mobile_width: 876w
 author_profile: true
 ---
 

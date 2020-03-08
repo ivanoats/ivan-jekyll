@@ -4,7 +4,9 @@
   {% capture img_path %}{{ page.header.image | relative_url }}{% endcapture %}
 {% endif %}
 
-{% capture img_path_mobile %}{{ page.header.image-mobile | relative_url }}{% endcapture %}
+{% capture img_width %}{{ page.header.image_width }}{% endcapture %}
+{% capture img_path_mobile %}{{ page.header.image_mobile | relative_url }}{% endcapture %}
+{% capture img_mobile_width %}{{ page.header.image_mobile_width}}{% endcapture %}
 
 {% if page.header.cta_url contains "://" %}
   {% capture cta_path %}{{ page.header.cta_url }}{% endcapture %}
@@ -68,7 +70,11 @@
       {% endif %}
     </div>
   {% else %}
-    <img src="{{ img_path }}" alt="{{ image_description }}" class="page__hero-image"> # image_path_mobile here
+    <img
+      srcset="{{ img_path_mobile }} {{ img_mobile_width}}, {{ img_path }} {{img_width}}"
+      src="{{ img_path }}"
+      alt="{{ image_description }}"
+      class="page__hero-image">
   {% endif %}
   {% if page.header.caption %}
     <span class="page__hero-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
