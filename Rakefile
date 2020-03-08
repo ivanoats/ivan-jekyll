@@ -1,23 +1,24 @@
+# frozen_string_literal: true
+
 # task :default => :deploy
 
-
-desc "production build"
+desc 'production build'
 task :build_prod do
-  sh "JEKYLL_ENV=production bundle exec jekyll build"
+  sh 'JEKYLL_ENV=production bundle exec jekyll build'
 end
 
-desc "clean site building artifacts"
+desc 'clean site building artifacts'
 task :clean do
-  sh "bundle exec jekyll clean"
+  sh 'bundle exec jekyll clean'
 end
 
-desc "prod build and deploy via scotty"
-task :deploy => [:clean, :build_prod] do
-  sh "scotty --website --bucket=www.ivanstorck.com --source=_site --update"
+desc 'prod build and deploy via scotty'
+task deploy: %i[clean build_prod] do
+  sh 'scotty --website --bucket=www.ivanstorck.com --source=_site --update'
 end
 
-desc "localhost serve"
+desc 'localhost serve'
 task :serve do
-  sh "bundle exec jekyll serve"
+  sh 'bundle exec jekyll serve'
 end
-task :s => :serve 
+task s: :serve

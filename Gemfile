@@ -1,4 +1,6 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
 ruby RUBY_VERSION
 
 # Hello! This is where you manage which Jekyll version is used to run.
@@ -9,24 +11,24 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "4.0.0"
+gem 'jekyll', '4.0.0'
 
-gem "minimal-mistakes-jekyll"
+gem 'minimal-mistakes-jekyll'
 
-gem "growl"
-gem "jemoji"
-gem "s3_website"
+gem 'growl'
+gem 'jemoji'
+gem 's3_website'
 
 # speed up parsing
-gem "liquid-c"
+gem 'liquid-c'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem "jekyll-commonmark"
-   gem "jekyll-feed", "~> 0.6"
-   gem "jekyll-include-cache"
-   gem "jekyll-responsive-image"
-   gem "jekyll-purgecss"
+  gem 'jekyll-commonmark'
+  gem 'jekyll-feed', '~> 0.6'
+  gem 'jekyll-include-cache'
+  gem 'jekyll-purgecss'
+  gem 'jekyll-responsive-image'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
