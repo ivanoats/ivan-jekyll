@@ -14,6 +14,7 @@ module Jekyll
     def generate(site); end
   end
 
+  # :nodoc:
   class Site
     alias process_without_growl process
 
