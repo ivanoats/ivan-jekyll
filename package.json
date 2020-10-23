@@ -18,5 +18,8 @@
   "homepage": "https://github.com/ivanoats/ivan-jekyll#readme",
   "devDependencies": {
     "purgecss": "^2.1.0"
+  },
+  "volta": {
+    "node": "14.14.0"
   }
 }
