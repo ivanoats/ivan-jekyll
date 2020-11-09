@@ -200,7 +200,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-  - jekyll-responsive-image
+#  - jekyll-responsive-image
   - jekyll-purgecss
 
 # purgecss

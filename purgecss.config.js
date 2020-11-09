@@ -1,3 +1,5 @@
+console.log("in purgecss config")
+
 module.exports = {
   // These are the files that Purgecss will search through
   content: ["./_site/**/*.html"],
