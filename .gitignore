@@ -8,3 +8,4 @@ aero-deploy.tar.gz
 assets/sources
 aero-debug.log
 node_modules
+.vscode
