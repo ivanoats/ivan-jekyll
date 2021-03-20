@@ -13,7 +13,7 @@ ruby RUBY_VERSION
 # Happy Jekylling!
 gem 'jekyll', '4.1.1'
 
-gem 'minimal-mistakes-jekyll'
+gem 'minimal-mistakes-jekyll', '>= 4.20.2'
 
 gem 'growl'
 gem 'jemoji', '>= 0.12.0'
@@ -24,9 +24,9 @@ gem 'liquid-c'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem 'jekyll-commonmark'
-  gem 'jekyll-feed', '~> 0.6'
-  gem 'jekyll-include-cache'
+  gem 'jekyll-commonmark', '>= 1.3.1'
+  gem 'jekyll-feed', '~> 0.15', '>= 0.15.1'
+  gem 'jekyll-include-cache', '>= 0.2.1'
   gem 'jekyll-purgecss'
 #  gem 'jekyll-responsive-image'
 end
