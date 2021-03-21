@@ -4,7 +4,7 @@ layout: single
 title: "Ivan Storck: Web Developer, Teacher, Entrepreneur"
 excerpt: "Ivan Storck is a web developer with a focus on teaching, public speaking, and online communications."
 header:
-  image: /assets/images/ivan-smiling-teaching-cropped.jpg
+  image: /assets/images/ivan-smiling-teaching-1752w.jpg
 author_profile: true
 ---
 

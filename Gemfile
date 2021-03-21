@@ -11,9 +11,9 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem 'jekyll', '4.1.1'
+gem 'jekyll', '4.2.0'
 
-gem 'minimal-mistakes-jekyll', '>= 4.20.2'
+gem 'minimal-mistakes-jekyll', '>= 4.22.0'
 
 gem 'growl'
 gem 'jemoji', '>= 0.12.0'
