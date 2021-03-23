@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/ivanoats/ivan-jekyll#readme",
   "devDependencies": {
-    "purgecss": "^2.1.0",
+    "purgecss": "^4.0.3",
     "scottyjs": "^1.10.2"
   },
   "volta": {
-    "node": "14.14.0"
+    "node": "14.15.0"
   }
 }
