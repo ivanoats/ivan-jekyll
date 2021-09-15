@@ -16,6 +16,6 @@ I'm in love with a new text editor. It's called [Vico](http://vicoapp.com). For 
 
 Here's a screen shot showing a vertical split between the view and the view spec, with RSpec results  in a Rails app:
 
- ![screenshot](http://mediacdn.disqus.com/uploads/mediaembed/images/169/523/original.jpg)
+ ![screenshot](/assets/images/vico.jpeg)
  
 There is a link on [Vico's](http://vicoapp.com) site for a free trial app - go try it! 
