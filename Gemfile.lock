@@ -142,6 +142,7 @@ GEM
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.7.0)
+    webrick (1.7.0)
     zeitwerk (2.4.2)
 
 PLATFORMS
@@ -159,9 +160,10 @@ DEPENDENCIES
   minimal-mistakes-jekyll (>= 4.22.0)
   rake
   s3_website
+  webrick (~> 1.7)
 
 RUBY VERSION
-   ruby 2.7.2p137
+   ruby 3.0.2p107
 
 BUNDLED WITH
-   2.1.4
+   2.2.22
