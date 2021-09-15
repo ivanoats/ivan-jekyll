@@ -5,7 +5,7 @@ date: '2005-10-17 19:00:00'
 ---
 
 
-![four directions](http://www.ivanenviroman.com.s3-website-us-east-1.amazonaws.com/images/Four_Directions_Project_Management.gif)
+![four directions](/assets/images/Four_Directions_Project_Management.gif)
 
 I’ve been adapting the [Rational Unified Process](http://en.wikipedia.org/wiki/Rational_Unified_Process) (software development) to a micro-scale: my [Sustainable Marketing](http://www.sustainablemarketing.com) clients. Drawing inspiration from the teachings of the Native American medicine wheel and Buddhist mandalas, I adopted the four stages of the process and aligned them to the four cardinal directions.
 
