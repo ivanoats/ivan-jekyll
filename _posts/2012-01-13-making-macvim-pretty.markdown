@@ -13,11 +13,12 @@ The holy editor wars. Almost everyone has their favorite, and your colleague, co
 
 Lately I've been favoring MacVim. Especially with these modifications I'm about to show you that make it... pretty!
 
-![macvim screenshot](http://faculty.washington.edu/ivanoats/images/macvim_screenshot.gif)
+![macvim screenshot](/assets/images/macvim_screenshot.gif)
 
-First, there is [Alloy's MacVim fork](http://github.com/alloy/macvim). It gives you a nice Mac-like sidebar, project drawer - just like TextMate. The easiest way I found to install Alloy's fork is to use the normal homebrew recipe for macvim, but edit it, and point it to a new tarball that you've created. 
+First, there is [Alloy's MacVim fork](http://github.com/alloy/macvim). It gives you a nice Mac-like sidebar, project drawer - just like TextMate. The easiest way I found to install Alloy's fork is to use the normal homebrew recipe for macvim, but edit it, and point it to a new tarball that you've created.
 
 * install homebrew if you haven't already
+<!-- markdownlint-disable MD033 MD034-->
 * <code>git clone https://github.com/alloy/macvim.git</code>
 * <code>tar -cvzf macvim-7.3-63.tgz macvim/</code>
 * <code>brew edit macvim</code>
@@ -34,5 +35,4 @@ that duplicate and improve on Command-T's functionality already, like
 [Ctrl-P](https://github.com/kien/ctrlp.vim) but
 none of them are a pretty Cocoa GUI like PeepOpen. It is a paid product, but it's worth the cost if you like to make your environment worth tolook at it.
 
-Other reasons I am preferring Vim over TextMate lately are Tim Pope's excellent plugins: Rails.vim, and Fugitive.com (for Git). 
-
+Other reasons I am preferring Vim over TextMate lately are Tim Pope's excellent plugins: Rails.vim, and Fugitive.com (for Git).
