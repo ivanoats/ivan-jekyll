@@ -12,11 +12,6 @@ task :clean do
   sh 'bundle exec jekyll clean'
 end
 
-desc 'prod build and deploy via scotty'
-task deploy: %i[clean build_prod] do
-  sh 'scotty --website --bucket=www.ivanstorck.com --source=_site --update'
-end
-
 desc 'localhost serve'
 task :serve do
   sh 'bundle exec jekyll serve'
