@@ -13,7 +13,7 @@ ruby RUBY_VERSION
 # Happy Jekylling!
 gem 'jekyll', '>= 4.2.0'
 
-gem 'minimal-mistakes-jekyll', '>= 4.22.0'
+gem 'minimal-mistakes-jekyll', '>= 4.24.0'
 
 gem 'growl'
 gem 'jemoji', '>= 0.12.0'
@@ -25,7 +25,7 @@ gem 'liquid-c'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem 'jekyll-commonmark', '>= 1.3.1'
-  gem 'jekyll-feed', '~> 0.15', '>= 0.15.1'
+  gem 'jekyll-feed', '~> 0.16', '>= 0.16.0'
   gem 'jekyll-include-cache', '>= 0.2.1'
   gem 'jekyll-purgecss'
 #  gem 'jekyll-responsive-image'
@@ -36,5 +36,5 @@ end
 
 # Build tool
 gem 'rake'
-
-gem "webrick", "~> 1.7"
+gem 'webrick', '~> 1.7'
+gem 'rubocop', '~> 1.25'
