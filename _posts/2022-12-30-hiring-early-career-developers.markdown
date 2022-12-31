@@ -10,9 +10,9 @@ tags:
 - onboarding
 ---
 
-I’ve been encouraging and getting the company I work for to hire more early career developers, bootcamp grads, people from non-traditional, non-computer science backgrounds. There’s a shortage of senior engineers, but a glut of early career devs in the hiring market now. 
+I’ve been encouraging and getting the company I work for to hire more early career developers, bootcamp grads, people from non-traditional, non-computer science backgrounds. There’s a shortage of senior engineers, but a glut of early career devs in the hiring market now.
 
-But why hire early career devs? Typical resistance takes the form that it takes too long to train new programmers, takes away time spent on new features for seniors, and you can’t train developers remotely. Well, that’s just not true. 
+But why hire early career devs? Typical resistance takes the form that it takes too long to train new programmers, takes away time spent on new features for seniors, and you can’t train developers remotely. Well, that’s just not true.
 
 ## Why “Early Career” Rather than “Junior” is important
 
@@ -31,7 +31,7 @@ When interviewing early career developers, there are several traits that I look 
 1. **Collaboration Skills**: Development work often involves collaboration with other team members, so it's important for early career developers to be able to work effectively with others. Seek candidates who are good at communicating, listening, and working as part of a team.
 2. **Adaptability**: As technology and industry practices change over time, it's essential for early career developers to be able to adapt and learn new skills as needed. Search for candidates who are open to learning and who can quickly pick up new technologies and methods.
 3. **Balance**: Look for someone that can handle “juggling multiple balls in the air”. Working at corporations means meetings. Countless meetings. I can be hard to carve out focus time. Honestly, here is where I might have a bias for people that have been parents, or leaders in the military, healthcare, or something similar where the situation can get chaotic and emotional quickly. Not exclusively, but it’s usually a good sign.
-4. **Technical** skills. I purposely put this last because, although there has to be a satisfactory level, it’s not the most important thing to wow a senior developer. 
+4. **Technical** skills. I purposely put this last because, although there has to be a satisfactory level, it’s not the most important thing to wow a senior developer.
 
 In a large organization, Consistency, communication, and a growth mindset beat raw talent. Consistency is indispensable because it allows them to build on their natural abilities and to maintain high levels of performance over time. Effective communication is essential for building and maintaining relationships, collaborating with others, and achieving goals. It allows individuals to share their ideas, insights, and perspectives, and to work together towards a common goal. A growth mindset is essential because it allows them to be open to learning new things and to be resilient in the face of challenges. It motivates individuals to improve and to seek opportunities for growth and development.
 
@@ -49,7 +49,7 @@ Here are some tips:
 
 ## Onboarding Strategies
 
-Onboarding is the process of introducing new team members to an organization and helping them to become productive and effective in their role. Having a good onboarding process helps dial in the whole development process. Faster onboarding for mid-and senior developers. Better documentation. Better abstractions and architecture in the code. All things that accelerate feature development and reduce technical debt. 
+Onboarding is the process of introducing new team members to an organization and helping them to become productive and effective in their role. Having a good onboarding process helps dial in the whole development process. Faster onboarding for mid-and senior developers. Better documentation. Better abstractions and architecture in the code. All things that accelerate feature development and reduce technical debt.
 
 By providing new hires with the resources and support they need to get up to speed quickly, organizations can reduce the time it takes for them to become fully productive. This is especially important for mid- and senior-level developers, who are expected to contribute to the development process right away.
 
@@ -71,9 +71,9 @@ Mentoring relationships can be informal, with the mentor and mentee meeting on a
 
 I’ll outline several mentoring strategies below:
 
-### The grasshopper method:
+### The grasshopper method
 
-> The Grasshopper method is a learning strategy that involves breaking a complex task or concept into smaller, more manageable pieces and tackling them one at a time. 
+> The Grasshopper method is a learning strategy that involves breaking a complex task or concept into smaller, more manageable pieces and tackling them one at a time.
 
 The grasshopper is known for its ability to jump from one place to another. The method is often used in programming or other fields where there is a lot of information to learn, and it can be overwhelming to try to take it all in at once.
 
@@ -85,9 +85,12 @@ The grasshopper method can be useful in developing and sequencing a list of onbo
 
 ### Pair Programming and Code Reviews
 
-Pair programming is working together. Sitting down and banging out some code on a shared screen. Taking breaks to talk about anything but work. Getting to know someone. It’s the shortcut to team building, building relationships one by one without the pressure of a meeting. 
+Pair programming is working together. Sitting down and banging out some code on a shared screen. Taking breaks to talk about anything but work. Getting to know someone. It’s the shortcut to team building, building relationships one by one without the pressure of a meeting.
 
-Code reviews are not my favorite activity. I sometimes wonder what to say. It’s an impostor syndrome moment. Did I miss an error? What happens if I do, how embarrassed will I be? The truth is, if you’ve hired well, most code is good. If something leaps out at you, positive or negative, say it. But the best thing to do if you have read it and understand it, and have nothing to say is to approve it, to keep work going. 
+Code reviews are not my favorite activity. I sometimes wonder what to say. It’s an impostor syndrome moment. Did I miss an error? What happens if I do, how embarrassed will I be? The truth is, if you’ve hired well, most code is good. If something leaps out at you, positive or negative, say it. But the best thing to do if you have read it and understand it, and have nothing to say is to approve it, to keep work going.
+
+However, like all imposter syndrome events, your input is actually critical at the early career developer stage. Things that you think are “nits” or nitpicking might be well needed feedback to the early career developer. Just make sure to say they are not show stoppers and are purely style or educational oriented. A former mentee of mine said:
+> From my vantage point those small nuances are some of the gold that more Senior Engineers have learned in their years of experience that I am just starting to embark upon. One day I will have those 'nits' to share with early career devs, and the cycle of improving code will continue.
 
 ### Informal one-on-ones
 
@@ -95,6 +98,6 @@ Occasionally, a quick check in over chat or 1:1 zoom can surface questions that 
 
 ## You can hire early career software developers
 
-Regardless of your position, with the strategies above, you can be an integral part of hiring early career developers.  It’s an important step for equity and diversity in our profession, and can give your company a hiring edge over the competition when effective policies and practices are in place. 
+Regardless of your position, with the strategies above, you can be an integral part of hiring early career developers.  It’s an important step for equity and diversity in our profession, and can give your company a hiring edge over the competition when effective policies and practices are in place.
 
 How to get started? Share this article with your peers and your manager, and see what discussions arise. Let me know what you do in the comments here, please. I’d look forward to seeing more early career developers being hired.
