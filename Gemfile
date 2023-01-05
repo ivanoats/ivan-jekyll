@@ -28,7 +28,7 @@ group :jekyll_plugins do
   gem 'jekyll-feed', '~> 0.16', '>= 0.16.0'
   gem 'jekyll-include-cache', '>= 0.2.1'
   gem 'jekyll-purgecss'
-#  gem 'jekyll-responsive-image'
+  #  gem 'jekyll-responsive-image'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -36,5 +36,7 @@ end
 
 # Build tool
 gem 'rake'
-gem 'webrick', '~> 1.7'
 gem 'rubocop', '~> 1.25'
+gem 'webrick', '~> 1.7'
+
+gem 'jekyll-sass-converter', '~> 2.2'
