@@ -21,7 +21,7 @@ GEM
       aws-eventstream (~> 1, >= 1.0.2)
     colorator (1.1.0)
     colored (1.2)
-    commonmarker (0.23.6)
+    commonmarker (0.23.7)
     concurrent-ruby (1.1.10)
     configure-s3-website (2.3.0)
       aws-sdk (~> 2)
