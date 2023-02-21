@@ -24,7 +24,7 @@ gem 'liquid-c'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem 'jekyll-commonmark', '>= 1.3.1'
+  gem 'jekyll-commonmark', '>= 1.4.0'
   gem 'jekyll-feed', '~> 0.16', '>= 0.16.0'
   gem 'jekyll-include-cache', '>= 0.2.1'
   gem 'jekyll-purgecss'
