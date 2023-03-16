@@ -16,7 +16,7 @@ gem 'jekyll', '>= 4.2.0'
 gem 'minimal-mistakes-jekyll', '>= 4.24.0'
 
 gem 'growl'
-gem 'jemoji', '>= 0.12.0'
+gem 'jemoji', '>= 0.13.0'
 gem 's3_website'
 
 # speed up parsing
