@@ -170,7 +170,7 @@ DEPENDENCIES
   jekyll-include-cache (>= 0.2.1)
   jekyll-purgecss
   jekyll-sass-converter (~> 2.2)
-  jemoji (>= 0.12.0)
+  jemoji (>= 0.13.0)
   liquid-c
   minimal-mistakes-jekyll (>= 4.24.0)
   rake
