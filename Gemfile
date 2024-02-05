@@ -11,7 +11,7 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem 'jekyll', '>= 4.2.0'
+gem 'jekyll', '>= 4.3.3'
 
 gem 'minimal-mistakes-jekyll', '>= 4.24.0'
 
@@ -40,3 +40,5 @@ gem 'rubocop', '~> 1.25'
 gem 'webrick', '~> 1.7'
 
 gem 'jekyll-sass-converter', '~> 2.2'
+
+gem "faraday-retry", "~> 2.2"
