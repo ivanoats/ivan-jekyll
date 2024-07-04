@@ -41,4 +41,4 @@ gem 'webrick', '~> 1.7'
 
 gem 'jekyll-sass-converter', '~> 2.2'
 
-gem "faraday-retry", "~> 2.2"
+gem 'faraday-retry', '~> 2.2'
