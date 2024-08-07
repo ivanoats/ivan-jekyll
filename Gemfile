@@ -36,7 +36,7 @@ end
 
 # Build tool
 gem 'rake'
-gem 'rubocop', '~> 1.46', '>= 1.46.0'
+gem 'rubocop', '~> 1.65', '>= 1.65.1'
 gem 'webrick', '~> 1.7'
 
 gem 'jekyll-sass-converter', '~> 2.2'
