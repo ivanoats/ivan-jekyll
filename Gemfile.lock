@@ -205,7 +205,7 @@ DEPENDENCIES
   jekyll-sass-converter (~> 2.2)
   jemoji (>= 0.13.0)
   liquid-c
-  minimal-mistakes-jekyll (>= 4.25.0)
+  minimal-mistakes-jekyll (>= 4.26.2)
   rake
   rubocop (~> 1.66, >= 1.66.0)
   s3_website
