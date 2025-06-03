@@ -13,7 +13,7 @@ ruby RUBY_VERSION
 # Happy Jekylling!
 gem 'jekyll', '>= 4.3.3'
 
-gem 'minimal-mistakes-jekyll', '>= 4.26.2'
+gem 'minimal-mistakes-jekyll', '>= 4.27.0'
 
 gem 'growl'
 gem 'jemoji', '>= 0.13.0'
@@ -36,9 +36,9 @@ end
 
 # Build tool
 gem 'rake'
-gem 'rubocop', '~> 1.66', '>= 1.66.0'
+gem 'rubocop', '~> 1.73', '>= 1.73.0'
 gem 'webrick', '~> 1.8'
 
 gem 'jekyll-sass-converter', '~> 2.2'
 
-gem 'faraday-retry', '~> 2.2'
+gem 'faraday-retry', '~> 2.3', '>= 2.3.0'
