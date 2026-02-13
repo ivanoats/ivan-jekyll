@@ -4,6 +4,7 @@ module Jekyll
   # Displays a notification before and after the build process.
   class GrowlGenerator < Generator
     def initialize(_config = {})
+      super
       require 'growl'
     rescue LoadError
       warn 'You are missing a library required for growl. Please run:'
