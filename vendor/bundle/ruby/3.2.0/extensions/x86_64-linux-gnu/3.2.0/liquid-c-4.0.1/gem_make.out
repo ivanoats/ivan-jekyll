@@ -1,0 +1,23 @@
+current directory: /home/runner/work/ivan-jekyll/ivan-jekyll/vendor/bundle/ruby/3.2.0/gems/liquid-c-4.0.1/ext/liquid_c
+/usr/bin/ruby3.2 -I/usr/lib/ruby/vendor_ruby extconf.rb
+creating Makefile
+
+current directory: /home/runner/work/ivan-jekyll/ivan-jekyll/vendor/bundle/ruby/3.2.0/gems/liquid-c-4.0.1/ext/liquid_c
+make DESTDIR\= sitearchdir\=./.gem.20260213-3828-uz475a sitelibdir\=./.gem.20260213-3828-uz475a clean
+
+current directory: /home/runner/work/ivan-jekyll/ivan-jekyll/vendor/bundle/ruby/3.2.0/gems/liquid-c-4.0.1/ext/liquid_c
+make DESTDIR\= sitearchdir\=./.gem.20260213-3828-uz475a sitelibdir\=./.gem.20260213-3828-uz475a
+compiling block.c
+compiling lexer.c
+compiling liquid.c
+compiling parser.c
+compiling tokenizer.c
+compiling variable.c
+linking shared-object liquid_c.so
+
+current directory: /home/runner/work/ivan-jekyll/ivan-jekyll/vendor/bundle/ruby/3.2.0/gems/liquid-c-4.0.1/ext/liquid_c
+make DESTDIR\= sitearchdir\=./.gem.20260213-3828-uz475a sitelibdir\=./.gem.20260213-3828-uz475a install
+/usr/bin/install -c -m 0755 liquid_c.so ./.gem.20260213-3828-uz475a
+
+current directory: /home/runner/work/ivan-jekyll/ivan-jekyll/vendor/bundle/ruby/3.2.0/gems/liquid-c-4.0.1/ext/liquid_c
+make DESTDIR\= sitearchdir\=./.gem.20260213-3828-uz475a sitelibdir\=./.gem.20260213-3828-uz475a clean
