@@ -10,3 +10,5 @@ aero-debug.log
 node_modules
 .vscode
 .DS_Store
+vendor/bundle
+.bundle
