@@ -7,10 +7,11 @@
 - **New Version**: Ruby 3.4.2
 - **Status**: Successfully upgraded and tested
 - **Files Updated**:
-  - `.tool-versions`: Updated Ruby version specification
-  - `Gemfile.lock`: Already compatible with Ruby 3.4.2
+  - `.tool-versions`: Updated Ruby version specification to 3.4.2
+  - `Gemfile.lock`: Already compatible with Ruby 3.4.2 (specifies ruby 3.4.2p28)
   - `netlify.toml`: Already specifies Ruby 3.4.2
   - `_plugins/growl_generator.rb`: Fixed to call `super` in initializer (Ruby 3 best practice)
+- **Note**: The Gemfile uses `ruby RUBY_VERSION` which allows flexibility. All gems are verified compatible with Ruby 3.x.
 
 ### Node.js Upgrade ✅
 - **Previous Version**: Node.js 20.10.0
