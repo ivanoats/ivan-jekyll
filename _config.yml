@@ -205,7 +205,7 @@ plugins:
   - jekyll-purgecss
 
 # purgecss
-# css-dir: "assets/css"
+css_dir: "assets/css"
 
 # mimic GitHub Pages with --safe
 whitelist:
