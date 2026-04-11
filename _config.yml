@@ -91,11 +91,9 @@ social:
   name: # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
-# Analytics
-analytics:
-  provider: google # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id: "UA-3487613-8"
+# Analytics — GA4 tag is injected via _includes/head/custom.html (G-JHRSYNPYSF).
+# The theme's analytics block was configured for Universal Analytics (UA-*),
+# which Google shut down in July 2023, so it is intentionally not set here.
 
 # Site Author
 author:
@@ -206,14 +204,6 @@ plugins:
 
 # purgecss
 css_dir: "assets/css"
-
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
 
 # Archives
 #  Type
