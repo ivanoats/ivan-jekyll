@@ -29,13 +29,12 @@ There are no tests. `package.json` only pulls in `purgecss` (used by the `jekyll
 A few non-obvious things that aren't visible from directory structure alone:
 
 - **Markdown processor is kramdown, not commonmark.** `_config.yml` sets `markdown: kramdown` with GFM input. Do **not** re-add `jekyll-commonmark` — it pins an old `commonmarker` (Ruby < 4) and was removed because it was dead weight.
-- **Most of the theme lives in the gem.** `_includes/`, `_layouts/`, `_sass/` are minimal in this repo because `minimal-mistakes-jekyll` ships them. The repo only contains overrides: `_includes/head.html`, `_includes/head/`, `_includes/page__hero.html`. When changing layout/styling, first check whether you're overriding a theme file or need to create a new override — find the upstream file in `$(bundle show minimal-mistakes-jekyll)`.
-- **`_plugins/growl_generator.rb`** is a local Jekyll plugin that fires macOS Growl notifications on build start/finish. Growl is effectively abandoned on modern macOS; treat this as legacy and don't rely on it. It monkey-patches `Jekyll::Site#process`.
+- **Most of the theme lives in the gem.** `_includes/`, `_layouts/`, `_sass/` are minimal in this repo because `minimal-mistakes-jekyll` ships them. The repo contains exactly one override: `_includes/head/custom.html` (for GA4 and favicons). When changing layout/styling, first check whether you need to override a theme file or create a new one — find the upstream file in `$(bundle show minimal-mistakes-jekyll)`.
 - **Deployment is Netlify-only.** The `s3_website` gem and its config were removed — if you see references in old docs (e.g. `UPGRADE_NOTES.md`), they're stale. `netlify.toml` sets `command = "npm install && bundle exec jekyll build"`, `publish = "_site"`, and pins Ruby/Node versions.
 - **Posts predate the site's move to Jekyll** — filenames span 2005–present. The `permalink: /:categories/:title/` in `_config.yml` means categories in post front matter become URL path segments, so renaming categories breaks links.
 - **PurgeCSS runs at build time** via the `jekyll-purgecss` plugin, scanning `_site/**/*.html` against `_site/assets/css/main.css` and writing the purged CSS back to `_site/assets/css/` (configured via `css_dir: "assets/css"` in `_config.yml`). Only runs when `JEKYLL_ENV=production`. If CSS classes go missing after a build, check `purgecss.config.js` safelist.
 
 ## Conventions
 
-- `.rubocop.yml` is absent; rubocop runs with defaults. The only Ruby in-tree is `Rakefile` + `_plugins/growl_generator.rb`, both kept warning-free — preserve that when touching them.
+- `.rubocop.yml` is absent; rubocop runs with defaults. The only Ruby in-tree is the `Rakefile` — keep it warning-free when touching it.
 - New blog posts go in `_posts/YYYY-MM-DD-slug.markdown` with front matter following existing examples.

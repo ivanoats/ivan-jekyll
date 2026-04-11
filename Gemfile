@@ -14,7 +14,6 @@ gem 'jekyll', '>= 4.3.3'
 
 gem 'minimal-mistakes-jekyll', '>= 4.26.2'
 
-gem 'growl'
 gem 'jemoji', '>= 0.13.0'
 
 # speed up parsing
