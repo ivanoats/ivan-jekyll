@@ -19,6 +19,8 @@ github_username: ivanoats
 
 # Build settings
 theme: minimal-mistakes-jekyll
+logo: /assets/images/icon-192.png
+# minimal_mistakes_skin: "default"  # visual overrides live in assets/css/main.scss
 
 #############################################################
 # Welcome to Jekyll!

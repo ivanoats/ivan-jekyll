@@ -1,0 +1,244 @@
+---
+# Front matter marker so Jekyll processes this file through the Sass converter.
+# This file overrides the theme's default assets/css/main.scss entry point.
+search: false
+---
+
+/* ==========================================================================
+   Stork skin — custom minimal-mistakes theme overrides for ivanstorck.com
+   Palette: black / white / red, pulled from the stork logo
+   Typography: system serif display + system sans body
+   Dark mode: prefers-color-scheme media query at the bottom
+   ========================================================================== */
+
+/* ---- Variable overrides (must come BEFORE the theme import) ---- */
+
+// Typography — headings get a system serif stack, body stays on system sans.
+$serif-display: "Iowan Old Style", "Palatino Linotype", Palatino, ui-serif, "Apple Garamond", Georgia, Cambria, "Times New Roman", serif;
+$sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+
+$global-font-family: $sans-serif;
+$header-font-family: $serif-display;
+
+// Stork palette. Pure red is hot at link size; darken the link variant slightly.
+$stork-red: #ee2424;
+$stork-red-deep: #c41818;   // mix(#000, #ee2424, 18%)
+$stork-red-bright: #ff4a4a; // for dark-mode accents
+
+$text-color: #1a1a1a;
+$muted-text-color: #6a6a6a;
+$border-color: #e8e8e8;
+$background-color: #ffffff;
+
+$primary-color: $stork-red;
+$link-color: $stork-red-deep;
+$link-color-hover: #8a1010;
+$link-color-visited: #a42424;
+
+$masthead-link-color: #1a1a1a;
+$masthead-link-color-hover: $stork-red;
+$navicon-link-color-hover: $stork-red;
+
+$footer-background-color: #1a1a1a;
+
+$code-background-color: #f6f6f6;
+$code-background-color-dark: #ededed;
+
+/* ---- Theme import ---- */
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* ---- Light-mode touch-ups after theme import ---- */
+
+// Heading tracking + weight — serif display wants tighter letter spacing than the
+// theme's default (which assumes sans-serif).
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+h1 { font-weight: 700; letter-spacing: -0.02em; }
+h2 { letter-spacing: -0.015em; }
+
+// Larger, more present masthead logo (default max-height is 2rem ≈ 32-40px)
+.site-logo img {
+  max-height: 2.75rem;
+}
+
+// Warmer footer contrast since background is near-black now
+.page__footer {
+  color: #d8d8d8 !important;
+}
+.page__footer a { color: inherit; }
+.page__footer a:hover { color: $stork-red-bright; }
+.page__footer-copyright { color: #8a8a8a; }
+
+// Red underline animation on masthead nav hover — ties the accent into motion
+.greedy-nav .visible-links a:before {
+  background: $stork-red;
+}
+
+// Section-divider underline under h2 inside posts — softer red instead of default gray
+.page__content h2 {
+  border-bottom-color: rgba($stork-red, 0.25);
+}
+
+// Buttons and tags that the theme colors with $primary-color
+.btn--primary,
+.btn--primary:visited {
+  background-color: $stork-red;
+  color: #fff;
+}
+.btn--primary:hover {
+  background-color: $stork-red-deep;
+}
+
+/* ---- Dark mode ---- */
+/*
+ * minimal-mistakes compiles colors from SCSS variables at build time, so we
+ * can't flip skins at runtime. Instead we override the specific rules the
+ * theme generates, inside a prefers-color-scheme media query. The selector
+ * list below covers the surfaces that actually matter for readability.
+ */
+
+@media (prefers-color-scheme: dark) {
+  $dark-bg: #141414;
+  $dark-surface: #1c1c1c;
+  $dark-text: #e8e8e8;
+  $dark-muted: #9a9a9a;
+  $dark-border: #2a2a2a;
+
+  html,
+  body {
+    background-color: $dark-bg;
+    color: $dark-text;
+  }
+
+  // Body text, page content
+  .page__content,
+  .page__content p,
+  .page__content li,
+  .page__content dl,
+  .archive__item-excerpt,
+  .author__bio,
+  .sidebar p,
+  .sidebar li {
+    color: $dark-text;
+  }
+
+  // Links
+  a { color: $stork-red-bright; }
+  a:visited { color: mix(#ffffff, $stork-red-bright, 15%); }
+  a:hover,
+  a:active { color: #ffffff; }
+
+  // Headings — serif stays legible but uses lighter weight on dark
+  h1, h2, h3, h4, h5, h6,
+  .page__title,
+  .page__title a,
+  .archive__item-title,
+  .archive__item-title a {
+    color: $dark-text;
+  }
+  .page__content h2 {
+    border-bottom-color: rgba($stork-red-bright, 0.35);
+  }
+
+  // Masthead
+  .masthead {
+    background-color: $dark-bg;
+    border-bottom-color: $dark-border;
+  }
+  .greedy-nav {
+    background: $dark-bg;
+  }
+  .greedy-nav a,
+  .masthead .site-title {
+    color: $dark-text;
+  }
+  .greedy-nav a:hover,
+  .greedy-nav .visible-links a:hover {
+    color: $stork-red-bright;
+  }
+  .greedy-nav .visible-links a:before {
+    background: $stork-red-bright;
+  }
+  .greedy-nav .hidden-links {
+    background: $dark-surface;
+    border-color: $dark-border;
+  }
+  .greedy-nav .hidden-links::before { border-color: $dark-border transparent; }
+  .greedy-nav .hidden-links::after  { border-color: $dark-surface transparent; }
+  .navicon,
+  .navicon::before,
+  .navicon::after { background: $dark-text; }
+
+  // Sidebar / author card
+  .sidebar,
+  .author__content,
+  .author__name,
+  .author__name a {
+    color: $dark-text;
+  }
+  .author__urls {
+    background: $dark-surface;
+    border-color: $dark-border;
+  }
+  .author__urls::before { border-color: $dark-border transparent; }
+  .author__urls::after  { border-color: $dark-surface transparent; }
+
+  // Page meta, muted text
+  .page__meta,
+  .archive__subtitle,
+  .page__taxonomy-item {
+    color: $dark-muted;
+  }
+  .page__taxonomy-item {
+    border-color: $dark-border;
+  }
+
+  // Footer — invert: lighter surface against darker body so the footer band
+  // still reads as "footer" in dark mode
+  .page__footer {
+    background-color: #000 !important;
+    color: #9a9a9a !important;
+    border-top: 1px solid $dark-border;
+  }
+  .page__footer a:hover { color: $stork-red-bright !important; }
+
+  // Code blocks — the theme ships a dark-ish block already; soften the
+  // non-block `<code>` to match
+  .page__content :not(pre) > code {
+    background-color: $dark-surface;
+    color: #f3c0c0;
+  }
+
+  // Borders and dividers throughout the content flow
+  hr,
+  .page__content h2,
+  .page__share,
+  .page__related,
+  .masthead,
+  .comment:not(:last-child) {
+    border-color: $dark-border;
+  }
+
+  // Images get a slight brightness dampening so they don't glare at night
+  img {
+    opacity: 0.92;
+    transition: opacity 0.2s ease-in-out;
+  }
+  img:hover { opacity: 1; }
+
+  // Notices / callouts
+  .notice,
+  .notice--primary,
+  .notice--info,
+  .notice--warning,
+  .notice--success,
+  .notice--danger {
+    background-color: $dark-surface;
+    color: $dark-text;
+  }
+}
