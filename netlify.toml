@@ -17,8 +17,9 @@
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
 
-# Long-lived cache for static build assets.
+# Cache static build assets, but avoid immutable long-lived caching for
+# non-fingerprinted files such as /assets/css/main.css.
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=86400"
