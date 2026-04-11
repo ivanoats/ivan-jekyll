@@ -33,7 +33,7 @@ A few non-obvious things that aren't visible from directory structure alone:
 - **`_plugins/growl_generator.rb`** is a local Jekyll plugin that fires macOS Growl notifications on build start/finish. Growl is effectively abandoned on modern macOS; treat this as legacy and don't rely on it. It monkey-patches `Jekyll::Site#process`.
 - **Deployment is Netlify-only.** The `s3_website` gem and its config were removed — if you see references in old docs (e.g. `UPGRADE_NOTES.md`), they're stale.
 - **Posts predate the site's move to Jekyll** — filenames span 2005–present. The `permalink: /:categories/:title/` in `_config.yml` means categories in post front matter become URL path segments, so renaming categories breaks links.
-- **PurgeCSS runs at build time** via the `jekyll-purgecss` plugin, scanning `_site/**/*.html` against `_site/assets/css/site.css`. If CSS classes go missing after a build, check `purgecss.config.js` safelist.
+- **PurgeCSS runs at build time** via the `jekyll-purgecss` plugin, scanning `_site/**/*.html` against `_site/assets/css/main.css`. If CSS classes go missing after a build, check `purgecss.config.js` safelist.
 
 ## Conventions
 
