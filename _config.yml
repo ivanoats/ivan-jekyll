@@ -13,12 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-twitter_username: ivanoats
 bluesky_username: ivanstorck.com
 github_username: ivanoats
 
 # Build settings
 theme: minimal-mistakes-jekyll
+logo: /assets/images/icon-192.png
+# minimal_mistakes_skin: "default"  # visual overrides live in assets/css/main.scss
 
 #############################################################
 # Welcome to Jekyll!
@@ -76,9 +77,9 @@ bing_site_verification:
 alexa_site_verification:
 yandex_site_verification:
 
-# Social Sharing
-twitter:
-  username: ivanoats
+# Social Sharing — X/Twitter metadata intentionally omitted.
+# Open Graph (og:*) tags are still emitted by the theme and are read by
+# Facebook, LinkedIn, iMessage, Slack, Discord, Mastodon, Bluesky, etc.
 facebook:
   username: ivanoats
   app_id:
@@ -112,7 +113,7 @@ author:
   github: "ivanoats"
   google_plus:
   keybase:
-  instagram: "ivanoats"
+  instagram: "storckphotos"
   lastfm:
   linkedin: "ivanoats"
   pinterest:
@@ -120,7 +121,6 @@ author:
   stackoverflow: "394133/ivan" # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam:
   tumblr:
-  twitter: "ivanoats"
   vine:
   weibo:
   xing:
