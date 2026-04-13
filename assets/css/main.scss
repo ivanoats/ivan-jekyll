@@ -22,8 +22,8 @@ $header-font-family: $serif-display;
 
 // Stork palette. Pure red is hot at link size; darken the link variant slightly.
 $stork-red: #ee2424;
-$stork-red-deep: #c41818;   // mix(#000, #ee2424, 18%)
-$stork-red-bright: #ff4a4a; // for dark-mode accents
+$stork-red-deep: mix(#000, $stork-red, 18%);   // link color
+$stork-red-bright: #ff4a4a;                    // for dark-mode accents
 
 $text-color: #1a1a1a;
 $muted-text-color: #6a6a6a;
@@ -32,8 +32,8 @@ $background-color: #ffffff;
 
 $primary-color: $stork-red;
 $link-color: $stork-red-deep;
-$link-color-hover: #8a1010;
-$link-color-visited: #a42424;
+$link-color-hover: mix(#000, $stork-red, 42%);
+$link-color-visited: mix(#000, $stork-red, 28%);
 
 $masthead-link-color: #1a1a1a;
 $masthead-link-color-hover: $stork-red;
@@ -42,7 +42,6 @@ $navicon-link-color-hover: $stork-red;
 $footer-background-color: #1a1a1a;
 
 $code-background-color: #f6f6f6;
-$code-background-color-dark: #ededed;
 
 /* ---- Theme import ---- */
 
@@ -68,7 +67,7 @@ h2 { letter-spacing: -0.015em; }
 
 // Warmer footer contrast since background is near-black now
 .page__footer {
-  color: #d8d8d8 !important;
+  color: #d8d8d8;
 }
 .page__footer a { color: inherit; }
 .page__footer a:hover { color: $stork-red-bright; }
@@ -133,7 +132,7 @@ h2 { letter-spacing: -0.015em; }
   a:hover,
   a:active { color: #ffffff; }
 
-  // Headings — serif stays legible but uses lighter weight on dark
+  // Headings — serif stays legible on dark backgrounds
   h1, h2, h3, h4, h5, h6,
   .page__title,
   .page__title a,
@@ -201,11 +200,11 @@ h2 { letter-spacing: -0.015em; }
   // Footer — invert: lighter surface against darker body so the footer band
   // still reads as "footer" in dark mode
   .page__footer {
-    background-color: #000 !important;
-    color: #9a9a9a !important;
+    background-color: #000;
+    color: #9a9a9a;
     border-top: 1px solid $dark-border;
   }
-  .page__footer a:hover { color: $stork-red-bright !important; }
+  .page__footer a:hover { color: $stork-red-bright; }
 
   // Code blocks — the theme ships a dark-ish block already; soften the
   // non-block `<code>` to match
@@ -214,9 +213,10 @@ h2 { letter-spacing: -0.015em; }
     color: #f3c0c0;
   }
 
-  // Borders and dividers throughout the content flow
+  // Borders and dividers throughout the content flow.
+  // .page__content h2 is intentionally excluded — its border-bottom-color is
+  // set above to the red accent, and border-color here would override it.
   hr,
-  .page__content h2,
   .page__share,
   .page__related,
   .masthead,
