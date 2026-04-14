@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Web Developer, Cartographer, Aerial Photographer"
-excerpt: "Ivan Storck is a web developer with a focus on teaching, cartography and geospatial data, and aerial photography."
+title: "Sustainable systems for founders building things that last"
+excerpt: "Fractional CTO, open-source contributor to the sustainable web, and photographer. 25 years of shipping, teaching, and surviving cycles. Seattle."
 header:
   image: /assets/images/ivan-smiling-teaching-1752w.jpg
   image_width: 1752w
@@ -10,17 +10,23 @@ header:
 author_profile: true
 ---
 
-Ivan Storck is an outdoor enthusiast with a love of aesthetics and technology, which naturally led him to photography. He has a diverse background in environmental studies, geography, map-making, web design, programming, and entrepreneurship.
+I help founders build systems that are still good five years in. Fractional CTO, open-source contributor to the sustainable web, and photographer. Seattle, thinking from the Salish Sea.
 
-FAA Part 107 licensed [Aerial photography](https://storckphotos.com) and mapping with drones builds on the strengths in his tech experience. Ivan uses his geography background for creating insightful geospatial data applications.
+## Currently
 
-His love of [stand-up-paddling](https://instagram.com/goodpaddle), [certificate](https://www.psupa.com) in SUP instruction, and love of surfing gives him a noteworthy maritime perspective.
+- Writing [wsg-check](https://github.com/ivanoats/wsg-check), a checker for the [W3C Web Sustainability Guidelines](https://www.w3.org/TR/web-sustainability-guidelines/), and running it against real sites — including this one.
+- Contributing to [sustainablewebsites2](https://github.com/ivanoats/sustainablewebsites2).
+- Building Rendition, an open-source media CDN in Rust with a sustainability angle: WASM at the edge, less origin traffic, less energy.
+- Taking a small number of fractional engagements — [how to work with me](/work-with-me/).
+- Photography and aerial mapping at [storckphotos.com](https://storckphotos.com).
 
-He has successfully founded two web hosting companies and two technical training companies, as well as teaching at the University of Washington and presenting at conferences.
+## Background
 
-_Technologies I use_: [ReactJS](https://facebook.github.io/react/), [NodeJS](http://nodejs.org), [PostGIS](https://postgis.net/), [QGIS](https://www.qgis.org/en/site/)
+25 years of building web things. Founded two web hosting companies and two technical training companies. Taught at the University of Washington and [Code Fellows](https://www.codefellows.org/). FAA Part 107 drone pilot. PostGIS and QGIS for geospatial work. Currently a senior software engineer at lululemon, working on CMS and design systems.
 
-_Methodologies_: Test-Driven, UX focused, Data Driven, Agile, Lean, Open Source
+## Elsewhere
 
-<a href="/about" class="btn btn--info">More about Ivan</a>
-<a href="/blog" class="btn">Read my Blog</a>
+- [storckphotos.com](https://storckphotos.com) — photography
+- [goodpaddle.com](https://goodpaddle.com) — stand-up paddling
+
+[Read the blog](/blog/) · [How to work with me](/work-with-me/)
