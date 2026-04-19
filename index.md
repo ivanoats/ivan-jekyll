@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Sustainable systems for founders building things that last"
-excerpt: "Fractional CTO, open-source contributor to the sustainable web, and photographer. 25 years of shipping, teaching, and surviving cycles. Seattle."
+excerpt: "Fractional CTO, open-source contributor to the sustainable web, and photographer. 30 years of shipping, teaching, and surviving cycles. Seattle."
 header:
   image: /assets/images/ivan-smiling-teaching-1752w.jpg
   image_width: 1752w

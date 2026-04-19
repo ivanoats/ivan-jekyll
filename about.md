@@ -2,7 +2,7 @@
 permalink: /about/
 layout: single
 title: "Ivan Storck: About Me"
-excerpt: "Ivan Storck is a web developer with a focus on teaching, public speaking, and online communications."
+excerpt: "Ivan Storck is a Senior Solutions Architect with a focus on sustainability, entrepreneurship and Artificial Intelligence."
 header:
   image: /assets/images/ivan-smiling-teaching-1752w.jpg
 author_profile: true
