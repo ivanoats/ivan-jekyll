@@ -120,26 +120,28 @@ h2 { letter-spacing: -0.015em; }
 
 /* ---- Dark mode ---- */
 /*
- * minimal-mistakes compiles colors from SCSS variables at build time, so we
- * can't flip skins at runtime. Instead we override the specific rules the
- * theme generates, inside a prefers-color-scheme media query. The selector
- * list below covers the surfaces that actually matter for readability.
+ * Dark theme activates in two scenarios:
+ *   1. OS prefers dark AND user hasn't explicitly chosen light via the toggle.
+ *   2. User explicitly chose dark via the toggle (regardless of OS).
+ *
+ * A Sass mixin avoids duplicating the rule block. The compiled CSS contains
+ * two copies (one inside a media query, one outside); gzip handles the
+ * redundancy well since the blocks are near-identical.
  */
 
-@media (prefers-color-scheme: dark) {
-  $dark-bg: #141414;
-  $dark-surface: #1c1c1c;
-  $dark-text: #e8e8e8;
-  $dark-muted: #9a9a9a;
-  $dark-border: #2a2a2a;
+$dark-bg: #141414;
+$dark-surface: #1c1c1c;
+$dark-text: #e8e8e8;
+$dark-muted: #9a9a9a;
+$dark-border: #2a2a2a;
 
-  html,
-  body {
+@mixin dark-theme {
+  // Background + text on html itself (via &) and body
+  &, body {
     background-color: $dark-bg;
     color: $dark-text;
   }
 
-  // Body text, page content
   .page__content,
   .page__content p,
   .page__content li,
@@ -151,13 +153,11 @@ h2 { letter-spacing: -0.015em; }
     color: $dark-text;
   }
 
-  // Links
   a { color: $stork-red-bright; }
   a:visited { color: mix(#ffffff, $stork-red-bright, 15%); }
   a:hover,
   a:active { color: #ffffff; }
 
-  // Headings — serif stays legible on dark backgrounds
   h1, h2, h3, h4, h5, h6,
   .page__title,
   .page__title a,
@@ -169,7 +169,6 @@ h2 { letter-spacing: -0.015em; }
     border-bottom-color: rgba($stork-red-bright, 0.35);
   }
 
-  // Masthead
   .masthead {
     background-color: $dark-bg;
     border-bottom-color: $dark-border;
@@ -198,7 +197,6 @@ h2 { letter-spacing: -0.015em; }
   .navicon::before,
   .navicon::after { background: $dark-text; }
 
-  // Sidebar / author card
   .sidebar,
   .author__content,
   .author__name,
@@ -212,7 +210,6 @@ h2 { letter-spacing: -0.015em; }
   .author__urls::before { border-color: $dark-border transparent; }
   .author__urls::after  { border-color: $dark-surface transparent; }
 
-  // Page meta, muted text
   .page__meta,
   .archive__subtitle,
   .page__taxonomy-item {
@@ -222,8 +219,6 @@ h2 { letter-spacing: -0.015em; }
     border-color: $dark-border;
   }
 
-  // Footer — invert: lighter surface against darker body so the footer band
-  // still reads as "footer" in dark mode
   .page__footer {
     background-color: #000;
     color: #9a9a9a;
@@ -231,16 +226,11 @@ h2 { letter-spacing: -0.015em; }
   }
   .page__footer a:hover { color: $stork-red-bright; }
 
-  // Code blocks — the theme ships a dark-ish block already; soften the
-  // non-block `<code>` to match
   .page__content :not(pre) > code {
     background-color: $dark-surface;
     color: #f3c0c0;
   }
 
-  // Borders and dividers throughout the content flow.
-  // .page__content h2 is intentionally excluded — its border-bottom-color is
-  // set above to the red accent, and border-color here would override it.
   hr,
   .page__share,
   .page__related,
@@ -249,14 +239,12 @@ h2 { letter-spacing: -0.015em; }
     border-color: $dark-border;
   }
 
-  // Images get a slight brightness dampening so they don't glare at night
   img {
     opacity: 0.92;
     transition: opacity 0.2s ease-in-out;
   }
   img:hover { opacity: 1; }
 
-  // Notices / callouts
   .notice,
   .notice--primary,
   .notice--info,
@@ -265,5 +253,39 @@ h2 { letter-spacing: -0.015em; }
   .notice--danger {
     background-color: $dark-surface;
     color: $dark-text;
+  }
+
+  .theme-toggle {
+    color: $dark-text;
+    &:hover { color: $stork-red-bright; }
+  }
+}
+
+// Scenario 1: OS prefers dark, user hasn't explicitly chosen light.
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    @include dark-theme;
+  }
+}
+
+// Scenario 2: user explicitly chose dark via the toggle.
+html[data-theme="dark"] {
+  @include dark-theme;
+}
+
+/* ---- Theme toggle button ---- */
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: $masthead-link-color;
+  font-size: 1em;
+  padding: 0.25em 0.5em;
+  align-self: center;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: $stork-red;
   }
 }

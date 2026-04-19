@@ -20,6 +20,8 @@ module.exports = {
       "clipboard-helper",
       "clipboard-copy-button",
       "copied",
+      // Dark/light toggle button injected by _includes/head/custom.html.
+      "theme-toggle",
     ],
   },
 };

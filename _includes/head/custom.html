@@ -1,5 +1,15 @@
 <!-- start custom head snippets -->
 
+<!-- Restore saved theme preference before first paint to prevent flash -->
+<script>
+(function() {
+  var saved = localStorage.getItem('theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+  }
+})();
+</script>
+
 <!-- Google Analytics (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHRSYNPYSF"></script>
 <script>
@@ -15,10 +25,66 @@
 <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
 <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
 <meta name="application-name" content="Ivan Storck">
-<!-- theme-color: no-media fallback first (for browsers that ignore the
-     media attribute on this meta), then dark- and light-specific variants. -->
+<!-- theme-color: no-media fallback first, then scheme-specific variants.
+     The JS toggle also updates the fallback meta dynamically. -->
 <meta name="theme-color" content="#ffffff">
 <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+
+<!-- Dark/light toggle button — injected into the masthead nav on DOMContentLoaded -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var nav = document.querySelector('.greedy-nav');
+  if (!nav) return;
+
+  var btn = document.createElement('button');
+  btn.className = 'theme-toggle';
+  btn.type = 'button';
+  btn.setAttribute('aria-label', 'Toggle dark mode');
+
+  function isDark() {
+    var attr = document.documentElement.getAttribute('data-theme');
+    if (attr === 'dark') return true;
+    if (attr === 'light') return false;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+
+  function updateIcon() {
+    btn.innerHTML = isDark()
+      ? '<i class="fas fa-fw fa-sun" aria-hidden="true"></i>'
+      : '<i class="fas fa-fw fa-moon" aria-hidden="true"></i>';
+    btn.setAttribute('aria-label', isDark() ? 'Switch to light mode' : 'Switch to dark mode');
+  }
+
+  function updateThemeColor() {
+    var meta = document.querySelector('meta[name="theme-color"]:not([media])');
+    if (meta) meta.content = isDark() ? '#141414' : '#ffffff';
+  }
+
+  btn.addEventListener('click', function() {
+    var newTheme = isDark() ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateIcon();
+    updateThemeColor();
+  });
+
+  var hamburger = nav.querySelector('.greedy-nav__toggle');
+  if (hamburger) {
+    nav.insertBefore(btn, hamburger);
+  } else {
+    nav.appendChild(btn);
+  }
+
+  updateIcon();
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+    if (!localStorage.getItem('theme')) {
+      updateIcon();
+      updateThemeColor();
+    }
+  });
+});
+</script>
 
 <!-- end custom head snippets -->
