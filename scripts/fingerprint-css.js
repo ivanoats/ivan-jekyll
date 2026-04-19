@@ -35,11 +35,9 @@ const fingerprintedName = `main.${hash}.css`;
 const CSS_DEST = path.join(CSS_DIR, fingerprintedName);
 
 // ---------------------------------------------------------------------------
-// 2. Write fingerprinted copy, remove original
+// 2. Write fingerprinted copy (original stays until all rewrites succeed)
 // ---------------------------------------------------------------------------
 fs.copyFileSync(CSS_SRC, CSS_DEST);
-fs.unlinkSync(CSS_SRC);
-console.log(`fingerprint-css: assets/css/main.css → assets/css/${fingerprintedName}`);
 
 // ---------------------------------------------------------------------------
 // 3. Rewrite references in all HTML (and XML) files under _site/
@@ -64,4 +62,10 @@ function walk(dir) {
 }
 
 walk(SITE_DIR);
+
+// ---------------------------------------------------------------------------
+// 4. Remove original only after all rewrites have succeeded
+// ---------------------------------------------------------------------------
+fs.unlinkSync(CSS_SRC);
+console.log(`fingerprint-css: assets/css/main.css → assets/css/${fingerprintedName}`);
 console.log(`fingerprint-css: updated ${updatedCount} file(s) to reference ${fingerprintedName}`);
