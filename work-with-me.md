@@ -44,4 +44,4 @@ A standing, light-touch relationship. Monthly call, async review of big decision
 
 ## Next step
 
-Email **[ivanoats@gmail.com](mailto:ivanoats@gmail.com)** with a paragraph about what you're building and the decision in front of you. I read every message and reply within a week.
+Email **[{{ site.author.email }}](mailto:{{ site.author.email }})** with a paragraph about what you're building and the decision in front of you. I read every message and reply within a week.
