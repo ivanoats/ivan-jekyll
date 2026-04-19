@@ -2,16 +2,16 @@
 permalink: /about/
 layout: single
 title: "Ivan Storck: About Me"
-excerpt: "Ivan Storck is a web developer with a focus on teaching, public speaking, and online communications."
+excerpt: "Ivan Storck is a Senior Solutions Architect with a focus on sustainability, entrepreneurship and Artificial Intelligence."
 header:
   image: /assets/images/ivan-smiling-teaching-1752w.jpg
 author_profile: true
 ---
-I’m Ivan Storck, a Senior Software Engineer at [lululemon](https://shop.lululemon.com), specializing in scalable, high-performance web applications for the company’s content management and upper funnel e-commerce platform.
+I’m Ivan Storck, a Senior Solutions Architect at [lululemon](https://shop.lululemon.com), specializing in scalable, high-performance web applications for the company’s digital asset management, social impact, and other Brand Technology teams.
 
 My expertise spans front-end and back-end development, leveraging cutting-edge technologies like JavaScript, ReactJS, NextJS, NodeJS, and AWS. As part of the Content Management and Design Systems teams, I focus on building reusable, accessible, and scalable components that drive consistency, observability, and operational effectiveness across digital experiences. Previously, I contributed to Personalization and Membership initiatives, enhancing both customer engagement and business efficiency.
 
-With over 25 years of experience in software engineering, UX, and entrepreneurship, I integrate performance optimization, capability maturity (CMM), operational effectivess, and observability into my approach. As a Certified Usability Analyst, I am committed to blending technical excellence with intuitive, user-centric design that meets both business and customer needs.
+With over 30 years of experience in software engineering, UX, and entrepreneurship, I integrate performance optimization, capability maturity (CMM), operational effectiveness, and observability into my approach. As a Certified Usability Analyst, I am committed to blending technical excellence with intuitive, user-centric design that meets both business and customer needs.
 
 Beyond tech, I have a deep passion for geospatial analysis, aerial photography, and mapping technologies. My work includes drone mapping, 3D GIS imagery, OpenStreetMap data extraction, and serverless web development, bridging the gap between data visualization and environmental exploration.
 
