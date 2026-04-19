@@ -23,7 +23,7 @@ A standing, light-touch relationship. Monthly call, async review of big decision
 
 ## Who I'm best for
 
-- **Stage**: seed to early Series A. Conversations earlier and later happen — I just want to be clear about where I fit most easily.
+- **Stage**: pre-seed to early Series A. Conversations earlier and later happen — I just want to be clear about where I fit most easily.
 - **Team**: one to fifteen engineers. I prefer teams small enough that I can get my head around all of the code.
 - **Horizon**: you think about your business and your craft on a five-to-ten-year timescale, not a twelve-month one.
 - **Values**: your work cares about durability — carbon, energy, long-lived code, or simply not burning the team out. This filter matters to me more than any of the others.
