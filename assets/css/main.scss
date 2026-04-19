@@ -65,6 +65,31 @@ h2 { letter-spacing: -0.015em; }
   max-height: 2.75rem;
 }
 
+// Heading permalink anchor — theme-bug override.
+// The theme's _page.scss emits .header-link styles inside .page__content
+// h1-h6, intended to be opacity:0 by default and opacity:1 on heading hover.
+// But the compiled CSS also includes a bare `.header-link` selector in both
+// rule lists (Sass compiler artifact), and since both have specificity (0,1,0)
+// and the hover-state rule comes later, the bare .header-link resolves to
+// opacity:1 always. Result: the chain-link icon is visible next to every
+// heading instead of only on hover. Override with higher specificity.
+.page__content h1 .header-link,
+.page__content h2 .header-link,
+.page__content h3 .header-link,
+.page__content h4 .header-link,
+.page__content h5 .header-link,
+.page__content h6 .header-link {
+  opacity: 0;
+}
+.page__content h1:hover .header-link,
+.page__content h2:hover .header-link,
+.page__content h3:hover .header-link,
+.page__content h4:hover .header-link,
+.page__content h5:hover .header-link,
+.page__content h6:hover .header-link {
+  opacity: 1;
+}
+
 // Warmer footer contrast since background is near-black now
 .page__footer {
   color: #d8d8d8;
