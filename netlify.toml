@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && bundle exec jekyll build"
+  command = "npm install && bundle exec jekyll build && node scripts/fingerprint-css.js"
   publish = "_site"
 
 [build.environment]
@@ -17,8 +17,14 @@
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
 
-# Cache static build assets, but avoid immutable long-lived caching for
-# non-fingerprinted files such as /assets/css/main.css.
+# Fingerprinted CSS gets a 1-year immutable cache — the hash in the filename
+# guarantees a new URL on every change, so browsers never serve stale CSS.
+[[headers]]
+  for = "/assets/css/main.*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Other static assets: 1-day cache (not immutable — filenames don't change).
 [[headers]]
   for = "/assets/*"
   [headers.values]
