@@ -5,6 +5,7 @@
 desc 'production build'
 task :build_prod do
   sh 'JEKYLL_ENV=production bundle exec jekyll build'
+  sh 'node scripts/fingerprint-css.js'
 end
 
 desc 'clean site building artifacts'
