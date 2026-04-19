@@ -26,7 +26,7 @@ I help founders build systems that are still good five years in. Fractional CTO,
 
 ## Elsewhere
 
-- [StorckPhotos.com](https://storckphotos.com) — Commercial architecure, drone, and outdoor photography
+- [StorckPhotos.com](https://storckphotos.com) — Commercial architecture, drone, and outdoor photography
 - [GoodPaddle.com](https://goodpaddle.com) — human-powered watercraft, SUP instruction, and coastal exploration
 
 [Read the blog](/blog/) · [How to work with me](/work-with-me/)
