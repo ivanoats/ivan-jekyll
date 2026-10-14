@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && bundle exec jekyll build && node scripts/fingerprint-css.js"
+  command = "npm install && npm run verdant && bundle exec jekyll build && node scripts/fingerprint-css.js"
   publish = "_site"
 
 [build.environment]

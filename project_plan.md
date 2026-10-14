@@ -24,6 +24,7 @@
 | 16 | Transparent logo background (strip cream) | #72 | 2026-04-19 |
 | 17 | Dark/light toggle button with localStorage persistence | #72 | 2026-04-19 |
 | 18 | CLAUDE.md + README.md refreshed for current state | direct to master | 2026-04-13 |
+| 19 | Adopt the Verdant design system — generated Sass tokens, System/Light/Dark/high-contrast themes, replaces stork skin | this PR | 2026-10-14 |
 
 ## In progress
 
@@ -92,9 +93,10 @@ Per the blogging strategy (`.claude/blogging-strategy.md`):
 | Voice guide | `.claude/blogging-strategy.md` §5 + memory `feedback_writing_voice.md` |
 | Stork-on-camera logo source | `assets/images/IMG_0110.PNG` (2100×2100, transparent bg after #72) |
 | Custom skin (all visual overrides) | `assets/css/main.scss` |
-| Theme overrides inventory | `_includes/head/custom.html`, `_includes/social-share.html`, `assets/css/main.scss` |
+| Theme overrides inventory | `_includes/head/custom.html`, `_includes/footer/custom.html`, `_includes/social-share.html`, `assets/css/main.scss` |
+| Verdant tokens (generated) | `_sass/verdant/_tokens.scss` via `npm run verdant` |
 | PurgeCSS safelist | `purgecss.config.js` |
-| Dark mode toggle JS | `_includes/head/custom.html` (inline script) |
+| Theme preference (Verdant runtime) | `assets/js/verdant-theme-toggle.js` (generated), control in `_includes/footer/custom.html` |
 | Fingerprinted CSS pipeline | `scripts/fingerprint-css.js` (post-build, runs on Netlify only) |
 | Netlify config | `netlify.toml` |
 | Dependabot grouping | `.github/dependabot.yml` |

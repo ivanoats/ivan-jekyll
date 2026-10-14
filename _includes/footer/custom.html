@@ -1,0 +1,13 @@
+<!-- Verdant theme preference. assets/js/verdant-theme-toggle.js keeps these
+     radios in sync with the saved choice; without JS the site follows
+     prefers-color-scheme. -->
+<fieldset class="theme-pref">
+  <legend class="theme-pref__legend">Theme</legend>
+  {%- assign theme_prefs = "system,light,dark" | split: "," -%}
+  {%- for pref in theme_prefs %}
+  <label class="theme-pref__option" for="theme-pref-{{ pref }}">
+    <input type="radio" id="theme-pref-{{ pref }}" name="theme-preference" value="{{ pref }}"{% if pref == "system" %} checked{% endif %}>
+    <span>{{ pref | capitalize }}</span>
+  </label>
+  {%- endfor %}
+</fieldset>
