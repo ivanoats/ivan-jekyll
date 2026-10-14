@@ -32,9 +32,9 @@ end
 
 # Build tool
 gem 'rake'
-gem 'rubocop', '~> 1.66', '>= 1.66.0'
+gem 'rubocop', '~> 1.87'
 gem 'webrick', '~> 1.8'
 
-gem 'jekyll-sass-converter', '~> 2.2'
+gem 'jekyll-sass-converter', '~> 3.1'
 
 gem 'faraday-retry', '~> 2.2'
