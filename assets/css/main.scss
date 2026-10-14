@@ -5,64 +5,224 @@ search: false
 ---
 
 /* ==========================================================================
-   Stork skin — custom minimal-mistakes theme overrides for ivanstorck.com
-   Palette: black / white / red, pulled from the stork logo
-   Typography: system serif display + system sans body
-   Dark mode: prefers-color-scheme media query at the bottom
+   Verdant skin — minimal-mistakes themed with the Verdant design system
+   https://github.com/ivanoats/verdant-wsg-demo
+
+   Tokens come from @sustainablewebsites/verdant-design via the generated
+   _sass/verdant/_tokens.scss (run `npm run verdant`; never edit it by hand).
+
+   Colours are Verdant's --colors-* custom properties, so one set of rules
+   below covers every theme:
+     - light by default, dark under prefers-color-scheme: dark
+     - an explicit Light/Dark choice via html[data-theme-override], set by
+       assets/js/verdant-theme-toggle.js from the footer's theme control
+     - stronger values under prefers-contrast: more
    ========================================================================== */
+
+@import "verdant/tokens";
+
+@function c($name) {
+  @return var(--colors-#{$name});
+}
 
 /* ---- Variable overrides (must come BEFORE the theme import) ---- */
 
-// Typography — headings get a system serif stack, body stays on system sans.
-$serif-display: "Iowan Old Style", "Palatino Linotype", Palatino, ui-serif, "Apple Garamond", Georgia, Cambria, "Times New Roman", serif;
-$sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-
+// Verdant uses system stacks only: no web fonts.
+$sans-serif: $verdant-font-sans;
+$monospace: $verdant-font-mono;
 $global-font-family: $sans-serif;
-$header-font-family: $serif-display;
+$header-font-family: $sans-serif;
+$caption-font-family: $sans-serif;
 
-// Stork palette. Pure red is hot at link size; darken the link variant slightly.
-$stork-red: #ee2424;
-$stork-red-deep: mix(#000, $stork-red, 18%);   // link color
-$stork-red-bright: #ff4a4a;                    // for dark-mode accents
+// Light values, for the parts of the theme that do colour maths at compile
+// time. Everything visible is re-pointed at the custom properties below.
+$text-color: $verdant-ink;
+$muted-text-color: $verdant-ink-muted;
+$border-color: $verdant-border;
+$background-color: $verdant-surface-100;
+$code-background-color: $verdant-surface-200;
+$form-background-color: $verdant-surface-200;
+$footer-background-color: $verdant-surface-200;
 
-$text-color: #1a1a1a;
-$muted-text-color: #6a6a6a;
-$border-color: #e8e8e8;
-$background-color: #ffffff;
+$primary-color: $verdant-accent;
+$success-color: $verdant-positive;
+$info-color: $verdant-info;
+$warning-color: $verdant-warning;
+$danger-color: $verdant-critical;
+$focus-color: $verdant-focus-ring;
 
-$primary-color: $stork-red;
-$link-color: $stork-red-deep;
-$link-color-hover: mix(#000, $stork-red, 42%);
-$link-color-visited: mix(#000, $stork-red, 28%);
+$link-color: $verdant-accent;
+$link-color-hover: $verdant-accent-strong;
+$link-color-visited: $verdant-accent;
 
-$masthead-link-color: #1a1a1a;
-$masthead-link-color-hover: $stork-red;
-$navicon-link-color-hover: $stork-red;
+$masthead-link-color: $verdant-ink;
+$masthead-link-color-hover: $verdant-accent;
+$navicon-link-color-hover: $verdant-accent;
 
-$footer-background-color: #1a1a1a;
-
-$code-background-color: #f6f6f6;
+$border-radius: $verdant-radius-sm;
 
 /* ---- Theme import ---- */
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* ---- Light-mode touch-ups after theme import ---- */
+/* ---- Theme contract ---- */
 
-// Heading tracking + weight — serif display wants tighter letter spacing than the
-// theme's default (which assumes sans-serif).
-h1, h2, h3, h4, h5, h6 {
+:root {
+  color-scheme: light dark;
+  @include verdant-colors-light;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme-override]) {
+    @include verdant-colors-dark;
+  }
+}
+
+html[data-theme-override="light"] {
+  @include verdant-colors-light;
+}
+
+html[data-theme-override="dark"] {
+  @include verdant-colors-dark;
+}
+
+html[data-theme-resolved="light"] { color-scheme: light; }
+html[data-theme-resolved="dark"] { color-scheme: dark; }
+
+@media (prefers-contrast: more) {
+  html:not([data-theme-override]),
+  html[data-theme-override="light"] {
+    @include verdant-colors-high-contrast-light;
+  }
+
+  html[data-theme-override="dark"] {
+    @include verdant-colors-high-contrast-dark;
+  }
+
+  .btn,
+  .notice,
+  .page__taxonomy-item,
+  .theme-pref__option,
+  input,
+  textarea,
+  select {
+    border-width: 2px;
+  }
+
+  :focus-visible { outline-width: 3px; }
+
+  a { text-decoration-thickness: 0.12em; }
+}
+
+@media (prefers-contrast: more) and (prefers-color-scheme: dark) {
+  html:not([data-theme-override]) {
+    @include verdant-colors-high-contrast-dark;
+  }
+}
+
+/* ---- Base ---- */
+
+html,
+body {
+  background-color: c(surface-100);
+  color: c(ink);
+}
+
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.page__title a,
+.archive__item-title,
+.archive__item-title a,
+.site-title,
+.masthead .site-title {
+  color: c(ink);
   letter-spacing: -0.01em;
   font-weight: 600;
 }
 
 h1 { font-weight: 700; letter-spacing: -0.02em; }
-h2 { letter-spacing: -0.015em; }
 
-// Larger, more present masthead logo (default max-height is 2rem ≈ 32-40px)
-.site-logo img {
-  max-height: 2.75rem;
+.page__content,
+.page__content p,
+.page__content li,
+.page__content dl,
+.archive__item-excerpt,
+.author__bio,
+.sidebar,
+.sidebar p,
+.sidebar li,
+.author__content,
+.author__name,
+.author__name a {
+  color: c(ink);
+}
+
+.page__meta,
+.page__date,
+.archive__subtitle,
+.archive__item-excerpt,
+.page__taxonomy-item,
+.author__bio,
+figcaption,
+.small,
+small {
+  color: c(ink-muted);
+}
+
+a {
+  color: c(accent);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 0.08em;
+}
+
+a:visited { color: c(accent); }
+
+a:hover,
+a:active { color: c(accent-strong); }
+
+// Headline links and nav read as UI, not prose: no underline until hover.
+.page__title a,
+.archive__item-title a,
+.site-title,
+.greedy-nav a,
+.page__taxonomy-item,
+.author__urls a,
+.social-icons a,
+.btn,
+.header-link {
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid c(focus-ring);
+  outline-offset: 2px;
+}
+
+// The theme's %tab-focus draws a thin dotted outline; Verdant uses one ring.
+a:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid c(focus-ring);
+  outline-offset: 2px;
+}
+
+hr,
+.page__share,
+.page__related,
+.comment:not(:last-child) {
+  border-color: c(border);
+}
+
+.page__content h2 {
+  border-bottom-color: c(border);
 }
 
 // Heading permalink anchor — theme-bug override.
@@ -86,206 +246,271 @@ h2 { letter-spacing: -0.015em; }
 .page__content h3:hover .header-link,
 .page__content h4:hover .header-link,
 .page__content h5:hover .header-link,
-.page__content h6:hover .header-link {
+.page__content h6:hover .header-link,
+.page__content .header-link:focus-visible {
   opacity: 1;
 }
 
-// Warmer footer contrast since background is near-black now
-.page__footer {
-  color: #d8d8d8;
-}
-.page__footer a { color: inherit; }
-.page__footer a:hover { color: $stork-red-bright; }
-.page__footer-copyright { color: #8a8a8a; }
+/* ---- Masthead ---- */
 
-// Red underline animation on masthead nav hover — ties the accent into motion
+.masthead {
+  background-color: c(surface-100);
+  border-bottom: 1px solid c(border);
+}
+
+.greedy-nav {
+  background: c(surface-100);
+}
+
+.greedy-nav a,
+.greedy-nav button {
+  color: c(ink);
+}
+
+.greedy-nav a:hover,
+.greedy-nav .visible-links a:hover {
+  color: c(accent);
+}
+
 .greedy-nav .visible-links a:before {
-  background: $stork-red;
+  background: c(accent);
 }
 
-// Section-divider underline under h2 inside posts — softer red instead of default gray
-.page__content h2 {
-  border-bottom-color: rgba($stork-red, 0.25);
+.greedy-nav .hidden-links {
+  background: c(surface-200);
+  border-color: c(border);
+}
+.greedy-nav .hidden-links::before { border-color: c(border) transparent; }
+.greedy-nav .hidden-links::after { border-color: c(surface-200) transparent; }
+.greedy-nav .hidden-links a { color: c(ink); }
+.greedy-nav .hidden-links a:hover { color: c(accent); background: c(surface-100); }
+
+.navicon,
+.navicon::before,
+.navicon::after {
+  background: c(ink);
 }
 
-// Buttons and tags that the theme colors with $primary-color
+.site-logo img {
+  max-height: 2.75rem;
+}
+
+/* ---- Sidebar / author ---- */
+
+// The theme fades the sidebar to 75% until hover, which drops it below the
+// contrast Verdant's tokens are verified for.
+.sidebar,
+.sidebar:hover {
+  opacity: 1;
+}
+
+// Below $large the author links are a dropdown; from $large they sit inline.
+.author__urls {
+  background: c(surface-200);
+  border-color: c(border);
+  border-radius: $verdant-radius-md;
+
+  @include breakpoint($large) {
+    background: transparent;
+  }
+}
+.author__urls::before { border-color: c(border) transparent; }
+.author__urls::after { border-color: c(surface-200) transparent; }
+.author__urls a,
+.author__urls-wrapper button {
+  color: c(ink);
+}
+
+.author__urls-wrapper .btn--inverse {
+  background-color: c(surface-200);
+  border-color: c(border-control);
+  color: c(ink);
+}
+
+/* ---- Taxonomy, pagination ---- */
+
+.page__taxonomy-item {
+  border-color: c(border);
+  border-radius: $verdant-radius-full;
+  color: c(ink-muted);
+}
+
+.page__taxonomy-item:hover {
+  border-color: c(accent);
+  color: c(accent);
+}
+
+.pagination--pager,
+.pagination li a {
+  background: c(surface-200);
+  border-color: c(border);
+  color: c(ink);
+}
+
+.pagination li a:hover {
+  color: c(accent);
+}
+
+.pagination li a.current,
+.pagination li a.current:hover {
+  background: c(accent);
+  border-color: c(accent);
+  color: c(accent-ink);
+}
+
+/* ---- Buttons (Verdant button recipe) ---- */
+
+.btn {
+  min-height: 44px;
+  padding: $verdant-space-2 $verdant-space-4;
+  border-radius: $verdant-radius-md;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
 .btn--primary,
 .btn--primary:visited {
-  background-color: $stork-red;
-  color: #fff;
+  background-color: c(accent);
+  border: 1px solid transparent;
+  color: c(accent-ink);
 }
+
 .btn--primary:hover {
-  background-color: $stork-red-deep;
+  background-color: c(accent-strong);
+  color: c(accent-ink);
 }
 
-/* ---- Dark mode ---- */
-/*
- * Dark theme activates in two scenarios:
- *   1. OS prefers dark AND user hasn't explicitly chosen light via the toggle.
- *   2. User explicitly chose dark via the toggle (regardless of OS).
- *
- * A Sass mixin avoids duplicating the rule block. The compiled CSS contains
- * two copies (one inside a media query, one outside); gzip handles the
- * redundancy well since the blocks are near-identical.
- */
+/* ---- Notices: raised surface with a status-colour rule ---- */
 
-$dark-bg: #141414;
-$dark-surface: #1c1c1c;
-$dark-text: #e8e8e8;
-$dark-muted: #9a9a9a;
-$dark-border: #2a2a2a;
+.notice,
+.notice--primary,
+.notice--info,
+.notice--warning,
+.notice--success,
+.notice--danger {
+  background-color: c(surface-200);
+  color: c(ink);
+  border: 1px solid c(border);
+  border-left-width: 4px;
+  border-radius: $verdant-radius-md;
+  box-shadow: none;
 
-@mixin dark-theme {
-  // Background + text on html itself (via &) and body
-  &, body {
-    background-color: $dark-bg;
-    color: $dark-text;
-  }
-
-  .page__content,
-  .page__content p,
-  .page__content li,
-  .page__content dl,
-  .archive__item-excerpt,
-  .author__bio,
-  .sidebar p,
-  .sidebar li {
-    color: $dark-text;
-  }
-
-  a { color: $stork-red-bright; }
-  a:visited { color: mix(#ffffff, $stork-red-bright, 15%); }
-  a:hover,
-  a:active { color: #ffffff; }
-
-  h1, h2, h3, h4, h5, h6,
-  .page__title,
-  .page__title a,
-  .archive__item-title,
-  .archive__item-title a {
-    color: $dark-text;
-  }
-  .page__content h2 {
-    border-bottom-color: rgba($stork-red-bright, 0.35);
-  }
-
-  .masthead {
-    background-color: $dark-bg;
-    border-bottom-color: $dark-border;
-  }
-  .greedy-nav {
-    background: $dark-bg;
-  }
-  .greedy-nav a,
-  .masthead .site-title {
-    color: $dark-text;
-  }
-  .greedy-nav a:hover,
-  .greedy-nav .visible-links a:hover {
-    color: $stork-red-bright;
-  }
-  .greedy-nav .visible-links a:before {
-    background: $stork-red-bright;
-  }
-  .greedy-nav .hidden-links {
-    background: $dark-surface;
-    border-color: $dark-border;
-  }
-  .greedy-nav .hidden-links::before { border-color: $dark-border transparent; }
-  .greedy-nav .hidden-links::after  { border-color: $dark-surface transparent; }
-  .navicon,
-  .navicon::before,
-  .navicon::after { background: $dark-text; }
-
-  .sidebar,
-  .author__content,
-  .author__name,
-  .author__name a {
-    color: $dark-text;
-  }
-  .author__urls {
-    background: $dark-surface;
-    border-color: $dark-border;
-  }
-  .author__urls::before { border-color: $dark-border transparent; }
-  .author__urls::after  { border-color: $dark-surface transparent; }
-
-  .page__meta,
-  .archive__subtitle,
-  .page__taxonomy-item {
-    color: $dark-muted;
-  }
-  .page__taxonomy-item {
-    border-color: $dark-border;
-  }
-
-  .page__footer {
-    background-color: #000;
-    color: #9a9a9a;
-    border-top: 1px solid $dark-border;
-  }
-  .page__footer a:hover { color: $stork-red-bright; }
-
-  .page__content :not(pre) > code {
-    background-color: $dark-surface;
-    color: #f3c0c0;
-  }
-
-  hr,
-  .page__share,
-  .page__related,
-  .masthead,
-  .comment:not(:last-child) {
-    border-color: $dark-border;
-  }
-
-  img {
-    opacity: 0.92;
-    transition: opacity 0.2s ease-in-out;
-  }
-  img:hover { opacity: 1; }
-
-  .notice,
-  .notice--primary,
-  .notice--info,
-  .notice--warning,
-  .notice--success,
-  .notice--danger {
-    background-color: $dark-surface;
-    color: $dark-text;
-  }
-
-  .theme-toggle {
-    color: $dark-text;
-    &:hover { color: $stork-red-bright; }
-  }
+  a { color: c(accent); }
 }
 
-// Scenario 1: OS prefers dark, user hasn't explicitly chosen light.
-@media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) {
-    @include dark-theme;
-  }
+.notice,
+.notice--primary { border-left-color: c(accent); }
+.notice--info { border-left-color: c(info); }
+.notice--warning { border-left-color: c(warning); }
+.notice--success { border-left-color: c(positive); }
+.notice--danger { border-left-color: c(critical); }
+
+/* ---- Code ---- */
+
+.page__content :not(pre) > code,
+p > code,
+li > code {
+  background-color: c(surface-200);
+  border: 1px solid c(border);
+  border-radius: $verdant-radius-sm;
+  color: c(ink);
 }
 
-// Scenario 2: user explicitly chose dark via the toggle.
-html[data-theme="dark"] {
-  @include dark-theme;
+/* ---- Forms ---- */
+
+input,
+textarea,
+select {
+  background-color: c(surface-200);
+  border: 1px solid c(border-control);
+  border-radius: $verdant-radius-sm;
+  color: c(ink);
 }
 
-/* ---- Theme toggle button ---- */
+::placeholder {
+  color: c(ink-placeholder);
+  opacity: 1;
+}
 
-.theme-toggle {
-  background: none;
-  border: none;
+/* ---- Footer ---- */
+
+.page__footer {
+  background-color: c(surface-200);
+  border-top: 1px solid c(border);
+  color: c(ink-muted);
+}
+
+.page__footer a,
+.page__footer a:visited {
+  color: c(ink-muted);
+}
+
+.page__footer a:hover {
+  color: c(accent);
+}
+
+.page__footer-copyright {
+  color: c(ink-muted);
+}
+
+/* ---- Theme preference (footer) ---- */
+
+.theme-pref {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: $verdant-space-2;
+  margin: 0 0 $verdant-space-4;
+  padding: 0;
+  border: 0;
+}
+
+.theme-pref__legend {
+  float: left; // keeps the legend inline with the options inside a flex fieldset
+  margin: 0 $verdant-space-1 0 0;
+  padding: 0;
+  font-size: $verdant-font-size-label;
+  line-height: $verdant-line-height-label;
+  font-weight: 600;
+  color: c(ink-muted);
+}
+
+.theme-pref__option {
+  display: inline-flex;
+  align-items: center;
+  gap: $verdant-space-2;
+  min-height: 44px;
+  padding: 0 $verdant-space-3;
+  border: 1px solid c(border);
+  border-radius: $verdant-radius-full;
+  background: c(surface-100);
+  color: c(ink);
+  font-size: $verdant-font-size-label;
+  line-height: $verdant-line-height-label;
+  font-weight: 600;
   cursor: pointer;
-  color: $masthead-link-color;
-  font-size: 1em;
-  padding: 0.25em 0.5em;
-  align-self: center;
-  transition: color 0.2s ease-in-out;
+}
 
-  &:hover {
-    color: $stork-red;
+.theme-pref__option:has(input:checked) {
+  border-color: c(accent);
+}
+
+.theme-pref__option input {
+  margin: 0;
+  accent-color: c(accent);
+}
+
+/* ---- Motion ---- */
+
+// Verdant gates motion behind prefers-reduced-motion: no-preference; the
+// theme's transitions predate that, so switch them off for people who ask.
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

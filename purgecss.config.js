@@ -5,6 +5,10 @@
 module.exports = {
   content: ["./_site/**/*.html"],
   css: ["./_site/assets/css/main.css"],
+  // Attributes the Verdant theme runtime (assets/js/verdant-theme-toggle.js)
+  // sets on <html> after load. They never appear in the static HTML, so
+  // without this every explicit Light/Dark rule would be purged.
+  dynamicAttributes: ["data-theme-override", "data-theme-resolved"],
   safelist: {
     standard: [
       // Screen-reader-only spans inserted into heading anchors and the code-block
@@ -20,8 +24,6 @@ module.exports = {
       "clipboard-helper",
       "clipboard-copy-button",
       "copied",
-      // Dark/light toggle button injected by _includes/head/custom.html.
-      "theme-toggle",
     ],
   },
 };
