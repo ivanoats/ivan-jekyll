@@ -1,0 +1,28 @@
+version = 1
+
+# Top-level keys must come before the [[analyzers]] tables, or TOML reads
+# them as part of the last analyzer.
+exclude_patterns = [
+  "_site/**",
+  ".jekyll-cache/**",
+  "node_modules/**",
+  # Generated from @sustainablewebsites/verdant-design by `npm run verdant`;
+  # fix findings upstream in ivanoats/verdant-wsg-demo, not here.
+  "assets/js/verdant-theme-toggle.js",
+  "_sass/verdant/**",
+]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  environment = ["nodejs", "browser"]
+
+[[analyzers]]
+name = "ruby"
+enabled = true
+
+[[analyzers]]
+name = "secrets"
+enabled = true
