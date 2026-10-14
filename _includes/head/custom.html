@@ -1,5 +1,11 @@
 <!-- start custom head snippets -->
 
+<!-- theme-color follows Verdant's surface.100; the theme runtime pins it to
+     the explicit choice when the reader picks Light or Dark. These must come before
+     the runtime script below, which updates them as soon as it runs. -->
+<meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15140f" media="(prefers-color-scheme: dark)">
+
 <!-- Verdant theme runtime (System/Light/Dark). Synchronous so a saved choice
      applies before first paint. Generated from @sustainablewebsites/verdant-design
      by `npm run verdant`. The inline shim carries over a choice saved by the
@@ -11,7 +17,9 @@ try {
     if (!localStorage.getItem('verdant-theme-preference')) localStorage.setItem('verdant-theme-preference', legacy);
     localStorage.removeItem('theme');
   }
-} catch (e) {}
+} catch (e) {
+  // Storage blocked (e.g. private mode): the old preference just isn't carried over.
+}
 </script>
 <script src="{{ '/assets/js/verdant-theme-toggle.js' | relative_url }}"></script>
 
@@ -30,9 +38,4 @@ try {
 <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
 <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
 <meta name="application-name" content="Ivan Storck">
-<!-- theme-color follows Verdant's surface.100; the theme runtime pins it to
-     the explicit choice when the reader picks Light or Dark. -->
-<meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#15140f" media="(prefers-color-scheme: dark)">
-
 <!-- end custom head snippets -->
