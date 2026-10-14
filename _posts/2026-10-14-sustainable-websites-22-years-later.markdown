@@ -11,7 +11,7 @@ tags:
 - side-projects
 ---
 
-In 2004 I started a web hosting company called Sustainable Websites. The idea was modest by today's standards: offset the carbon from the servers. I sold the hosting business to GreenGeeks in 2013 and went on to other things, but the question underneath it never went away. Hosting was only ever part of a website's footprint. The rest comes from how the site is built: how many bytes it sends, how much work it makes a phone do, how often it makes a server redo work it already did.
+In 2004 I started a web hosting company called Sustainable Websites. The idea was modest by today's standards: offset the carbon from the servers. I sold the hosting business to [GreenGeeks](https://www.greengeeks.com/track/sustainableweb/cp-default){:rel="sponsored"} in 2013 and went on to other things, but the question underneath it never went away. Hosting was only ever part of a website's footprint. The rest comes from how the site is built: how many bytes it sends, how much work it makes a phone do, how often it makes a server redo work it already did.
 
 That question finally has a standard to measure against. The W3C, the body behind HTML and CSS, has been drafting the [Web Sustainability Guidelines](https://www.w3.org/TR/web-sustainability-guidelines/) (WSG), a set of practices for building lower-impact websites, organized much like the accessibility guidelines most developers already know.
 
