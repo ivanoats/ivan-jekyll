@@ -1,8 +1,7 @@
 ---
 layout: single
 title: "Seattle trash pickup, in the calendar you already use"
-date: '2026-11-09 12:00:00 -0800'
-published: false
+date: '2026-11-10 00:00:00 -0800'
 excerpt: "A small app for Seattle neighbors: a recycling-week answer, an optional remembered address, an offline pickup calendar, and a raccoon named Jimothy."
 tags:
 - seattle
