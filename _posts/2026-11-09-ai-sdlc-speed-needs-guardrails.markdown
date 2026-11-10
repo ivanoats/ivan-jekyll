@@ -33,12 +33,12 @@ The strongest evidence comes from four controlled studies, and they don't agree 
 
 | Study                         | Setting                                                             | Result              |
 | :---------------------------- | :------------------------------------------------------------------ | :------------------ |
-| Peng et al., 2023 (GitHub)    | One bounded JavaScript task, less-experienced developers            | 55.8% faster        |
+| Peng et al., 2023 (GitHub)    | 95 professional developers, one bounded JavaScript task             | 55.8% faster        |
 | Paradis et al., 2024 (Google) | 96 engineers, a complex multi-file task                             | 21% faster          |
 | Cui et al., 2026              | Field experiments at Microsoft, Accenture and a Fortune 100 firm    | 26% more tasks done |
 | Becker et al., 2025 (METR)    | 16 experienced developers, 246 real tasks in their own mature repos | 19% slower          |
 
-That 55.8% figure shows up in a lot of slide decks. It comes from a single, well-bounded JavaScript task. As the tasks get more complex and the developers know their codebase better, the gain shrinks. In the METR trial it reversed. Experienced open-source maintainers working in their own repositories were 19% slower with AI tools allowed, even though they and outside experts had predicted a speedup (Becker et al., 2025).
+That 55.8% figure shows up in a lot of slide decks. It's the overall result for 95 professional developers on a single, well-bounded JavaScript task, and the less-experienced developers in that study gained the most. As the tasks get more complex and the developers know their codebase better, the gain shrinks. In the METR trial it reversed. Experienced open-source maintainers working in their own repositories were 19% slower with AI tools allowed, even though they and outside experts had predicted a speedup (Becker et al., 2025).
 
 Xu et al. (2025) found the same split from another angle. AI-assisted programming raised productivity mostly for less-experienced developers, while core developers reviewed 6.5% more code and wrote 19% less original code of their own.
 
@@ -59,7 +59,7 @@ Studies of whole-lifecycle enterprise deployments report the biggest gains:
 | Deployment cycle time, GenOps         | 55.7% shorter                    | 15,847 deployments, one framework |
 | Deployment frequency                  | Up to 20×                        | Case studies                      |
 | Defect rates in validation            | 41–90% lower                     | Case studies                      |
-| Legacy modernization effort           | 1,080 down to 232.5 person-days  | One longitudinal field study      |
+| Legacy modernization effort           | 1,080 down to 232.5 person-days  | Modeled estimate, one field study |
 
 Sources: Karuppuchamy (2026), Kumar (2023), the 2025 JCSTS and 2026 F1000Research papers, Beshane (2026), Aluri (2025), Armesto and Kolb (2026).
 
@@ -103,7 +103,7 @@ The second review rates the evidence behind each major claim:
 
 The claim most vendor pitches lean on is the bottom row, and it's the weakest one.
 
-It's also worth asking who's counting. A metric like "task time saved" counts the minutes an engineer spends typing. It doesn't count the reviewer's afternoon, the on-call engineer's 2 a.m. page, or the maintainer who inherits the code next year. Those costs still exist. They just land on different people, and the review-time numbers above say they land mostly on the senior ones.
+It's also worth asking who's counting. A metric like "task time saved" counts the time an engineer spends finishing the task, including debugging and checking the generated output. It doesn't count the reviewer's afternoon, the on-call engineer's 2 a.m. page, or the maintainer who inherits the code next year. Those costs still exist. They just land on different people, and the review-time numbers above say they land mostly on the senior ones.
 
 Both reviews came from [Consensus](https://consensus.app), an AI research search engine, and several of the sources are 2026 arXiv preprints that haven't been through peer review. They make a good reading list. Go to the primary paper before you cite a number.
 
