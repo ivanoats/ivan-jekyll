@@ -67,7 +67,8 @@ You don't need to read all 93 guidelines. Here are five changes that pay for the
 2. **Audit third-party scripts** (WSG 3.5). List every tracking pixel, chat widget, and plugin. Remove the ones nobody uses, and ask what each of the rest earns.
 3. **Load fewer fonts** (WSG 2.11). Two typefaces in a couple of weights is plenty. Every extra weight is another file to download before your text looks right.
 4. **Shorten the path to purchase** (WSG 2.4). Count the steps from landing page to confirmation and the fields on each form, then cut one of each.
-5. **Let browsers remember** (WSG 4.2). Good caching means a returning visitor's browser reuses files instead of downloading them again. A repeat visit should cost a fraction of the first. If you're starting a new site or redesigning one, consider building on a design system that makes these choices by default — [Verdant](https://verdant-design.org) is one we built for exactly that.
+5. **Let browsers remember** (WSG 4.2). Good caching means a returning visitor's browser reuses files instead of downloading them again. A repeat visit should cost a fraction of the first.
+6. **Start with a sustainable design system.** If you're building a new site or redesigning one, a design system that makes these choices by default saves you from retrofitting them later. [Verdant](https://verdant-design.org) is one we built for exactly that.
 
 If you'd like to know where your site stands, [WSG-Check](https://wsg-check.com) is free and needs no account. Give it a URL and it scores the site against the guidelines and lists what to fix first. If the result surprises you, or you'd like someone to go through it with you, that's what [Sustainable Websites](https://sustainablewebsites.com) does.
 
