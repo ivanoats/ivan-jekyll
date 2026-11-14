@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "The Greener Website Is Also the Cheaper, Faster One"
-date: '2026-11-15 09:00:00'
+date: '2026-11-14 09:00:00'
 excerpt: "Most of what makes a website lighter on the planet also makes it cheaper to run and faster to load. The evidence is stronger than you'd expect."
 tags:
 - sustainability
