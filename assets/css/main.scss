@@ -515,6 +515,14 @@ select {
   }
 }
 
+/* ---- Author avatar ---- */
+
+// _includes/author-profile.html gives the avatar width/height attributes (320x320) to
+// reserve space; the theme caps the width, so let the height follow.
+.author__avatar img {
+  height: auto;
+}
+
 /* ---- Icons ---- */
 
 // Self-hosted Font Awesome subset; replaces the CDN stylesheet (see _sass/_icons.scss).
