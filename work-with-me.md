@@ -5,9 +5,9 @@ permalink: /work-with-me/
 author_profile: true
 ---
 
-I help organizations put AI to work on their maps, data, and software: faster delivery, open-source stacks, and guardrails their teams can trust. I take a small number of engagements at a time.
+I build AI-assisted data pipelines for maps, charts, and media, with a check at every stage. I also help software teams adopt AI-assisted development without giving up review or ownership. I take a small number of engagements at a time.
 
-The work draws on three things I do every week. Architecture: writing down why a decision was made, so it outlasts the people who made it. Open-source web mapping: [Salish Sea Ferry Map](https://salishseaferrymap.com) and [Chartiles](https://chartiles.com). And building software with AI coding agents: [wsg-check](https://wsg-check.com), for example, runs as an MCP server inside AI assistants.
+The work draws on three things I do every week. Architecture: writing down why a decision was made, so it outlasts the people who made it. Open-source web mapping: [Salish Sea Ferry Map](https://salishseaferrymap.com) and [Chartiles](https://chartiles.com). And building software with AI coding agents: [wsg-check](https://wsg-check.com), for example, runs as an MCP server inside AI assistants. By day I'm a software architect for a global retailer, working on content pipelines and AI-assisted development at enterprise scale.
 
 ## Start here: a readiness review
 
@@ -17,11 +17,15 @@ A few days, at a fixed price. I read the code and the data, talk to two or three
 
 ### AI-ready spatial data
 
-Your spatial data in formats that are cheap to store and fast to query, such as PMTiles for display and GeoParquet for analysis, with MCP tools on top so AI assistants like Claude or Copilot can answer questions from it. Read-only by default, permission-aware, and logged.
+Your spatial data in formats that are cheap to store and fast to query, such as PMTiles for display and GeoParquet for analysis, kept current by a scheduled pipeline, with MCP tools on top so AI assistants like Claude or Copilot can answer questions from it. Read-only by default, permission-aware, and logged.
 
 ### Map modernization: 2 to 6 weeks
 
 Move a legacy or vendor-locked web map to an open stack: MapLibre, vector tiles, and PMTiles served from static storage. No tile server to run, a lighter page for your users, and a smaller hosting bill. AI agents do much of the labor; architecture decision records and tests keep it honest.
+
+### Media and content pipelines
+
+For organizations with large image and video libraries: ingest, AI-assisted tagging and metadata, renditions sized for every channel, and usage rights you can trace back to the source. It's the same pattern as a map pipeline, applied to media. [Rendition](https://github.com/ivanoats/rendition), my open-source media CDN, is the small-scale version.
 
 ### AI-assisted data quality
 
@@ -38,13 +42,14 @@ For teams that want senior technical judgment without a full-time hire. A weekly
 ## Who I'm best for
 
 - **Organizations with maps and spatial data**: transit agencies, ports and harbors, city and county GIS teams, parks and outdoor-recreation groups, environmental nonprofits, and the small firms that build for them.
+- **Organizations with growing media libraries**: brands, nonprofits, museums, and archives whose images and video have outgrown folders and spreadsheets.
 - **Software teams of one to fifteen engineers** who want AI in their workflow without giving up review or ownership.
 - **Horizon**: you think on a five-to-ten-year timescale, not a twelve-month one.
 - **Values**: your work cares about durability: lower cost, lower energy, long-lived code, and open formats you won't be locked out of. This filter matters to me more than any of the others.
 
 ## How it works
 
-1. Send me an email describing your maps, data, or software, and what's stuck.
+1. Send me an email describing your maps, media, data, or software, and what's stuck.
 2. We have a call, 30 to 60 minutes. No slides needed; I want to understand the problem.
 3. If we're a fit, I send a proposal: scope, deliverables, cadence, and price. I prefer fixed scope or weekly billing to hourly. Rates on inquiry.
 4. If we're not a fit, I'll say so clearly. I may have someone to recommend.
