@@ -34,7 +34,7 @@ locale: "en"
 title: "Ivan Storck"
 title_separator: "-"
 name: "Ivan Storck"
-description: "Web Developer, Catographer, and Aerial Photographer"
+description: "Software architect in Seattle. AI-assisted data pipelines for maps, charts, and media."
 url: "https://www.ivanstorck.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "ivanoats/ivan-jekyll" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -99,8 +99,8 @@ social:
 # Site Author
 author:
   name: "Ivan Storck"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Sustainable systems for things that last"
+  avatar: "/assets/images/ivan-avatar-320.webp"
+  bio: "AI-assisted data pipelines for maps, charts, and media"
   location: "Seattle, WA, USA"
   email: "ivan@ivanstorck.com"
   uri:

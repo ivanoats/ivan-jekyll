@@ -1,30 +1,24 @@
 ---
 permalink: /about/
 layout: single
-title: "Ivan Storck: About Me"
-excerpt: "Ivan Storck is a Senior Solutions Architect with a focus on sustainability, entrepreneurship and Artificial Intelligence."
+title: "About Ivan Storck"
+excerpt: "Software architect in Seattle. AI-assisted data pipelines for maps, charts, and media, and 30 years of building on the web."
 header:
   image: /assets/images/ivan-smiling-teaching-1752w.jpg
 author_profile: true
 ---
-I’m Ivan Storck, a Senior Solutions Architect at [lululemon](https://shop.lululemon.com), specializing in scalable, high-performance web applications for the company’s digital asset management, social impact, and other Brand Technology teams.
+I'm Ivan Storck, a software architect in Seattle. I build data pipelines that get maps, charts, and media from where they are to somewhere useful. Increasingly, AI coding agents do much of the labor, and tests decide what ships.
 
-My expertise spans front-end and back-end development, leveraging cutting-edge technologies like JavaScript, ReactJS, NextJS, NodeJS, and AWS. As part of the Content Management and Design Systems teams, I focus on building reusable, accessible, and scalable components that drive consistency, observability, and operational effectiveness across digital experiences. Previously, I contributed to Personalization and Membership initiatives, enhancing both customer engagement and business efficiency.
+By day I'm a Senior Solutions Architect at lululemon, working on content pipelines, digital asset management, and AI-assisted development. Most of my architecture practice is one habit: writing down why a decision was made, so it outlasts the people who made it.
 
-With over 30 years of experience in software engineering, UX, and entrepreneurship, I integrate performance optimization, capability maturity (CMM), operational effectiveness, and observability into my approach. As a Certified Usability Analyst, I am committed to blending technical excellence with intuitive, user-centric design that meets both business and customer needs.
+On nights and weekends I build open-source maps. [CharTiles](https://chartiles.com) turns NOAA nautical charts into tiles you can click and inspect. [Salish Sea Ferry Map](https://salishseaferrymap.com) puts every ferry in the region on one map. I also build [wsg-check](https://wsg-check.com) and [Verdant](https://verdant-design.org), tools for making websites lighter, cheaper, and faster.
 
-Beyond tech, I have a deep passion for geospatial analysis, aerial photography, and mapping technologies. My work includes drone mapping, 3D GIS imagery, OpenStreetMap data extraction, and serverless web development, bridging the gap between data visualization and environmental exploration.
+## How I got here
 
-Outside of work, I’m driven by adventure and lifelong learning:
+I've been building on the web for 30 years. In 2004 I started Sustainable Websites, a carbon-offset web host, and sold the hosting business to GreenGeeks in 2013. I've founded two web hosting companies and two technical training companies, and I taught at [Code Fellows](https://www.codefellows.org/) and the University of Washington. Along the way I became a Certified Usability Analyst, which still shapes how I judge software: by whether people can actually use it.
 
-- Entrepreneurship – Founded and led web hosting and training companies, focusing on sustainable and scalable digital solutions.
-- Technical Education – Former instructor at Code Fellows and the University of Washington, mentoring the next generation of developers.
-- Sailing & Outdoor Exploration – Combining my love for stand-up paddle racing, drone photography, and geospatial analysis to explore and document the Salish Sea and beyond.
-- AI & Innovation – Exploring AI’s role in creative fields, from data visualization to digital music synthesis.
-- PSUPA Certified Stand-up Paddleboard Instructor – Sharing my passion for water sports and performance coaching.
+## Off the clock
 
-When I’m not coding, mapping, or teaching, you can find me racing SUPs, sailing, or planning my next adventure on the water.
+I sail on Puget Sound, race stand-up paddleboards, and fly a drone over the Salish Sea for mapping and photography at [StorckPhotos](https://storckphotos.com). I'm a PSUPA-certified SUP instructor and an FAA Part 107 drone pilot, and I write about paddling at [Good Paddle](https://goodpaddle.com).
 
-💡 Let’s connect on software engineering, operational effectiveness, GIS, AI, entrepreneurship, or outdoor adventure!
-
-<a href="/blog" class="btn btn--info">Read the blog</a>
+If you're working on maps, media, or AI-assisted development, here's [how to work with me](/work-with-me/). Or [read the blog](/blog/).
