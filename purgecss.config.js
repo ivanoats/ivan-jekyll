@@ -24,6 +24,14 @@ module.exports = {
       "clipboard-helper",
       "clipboard-copy-button",
       "copied",
+      // Icons the theme JS injects into heading permalinks and code-copy buttons
+      // (see _sass/_icons.scss).
+      "fas",
+      "far",
+      "fa-fw",
+      "fa-link",
+      "fa-copy",
+      "fa-check",
     ],
   },
 };

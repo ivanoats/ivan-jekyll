@@ -65,7 +65,8 @@
       {%- if has_webp > 0 %}
       <source type="image/webp" srcset="{% if page.header.image_mobile and mobile_size %}{{ mobile_base | append: '.webp' | relative_url }} {{ mobile_size.width }}w, {% endif %}{{ hero_webp | relative_url }}{% if hero_size %} {{ hero_size.width }}w{% endif %}" sizes="100vw">
       {%- endif %}
-      <img src="{{ page.header.image | relative_url }}" alt="{{ image_description }}" class="page__hero-image"{% if page.header.image_mobile and mobile_size and hero_size %} srcset="{{ page.header.image_mobile | relative_url }} {{ mobile_size.width }}w, {{ page.header.image | relative_url }} {{ hero_size.width }}w" sizes="100vw"{% endif %}{% if hero_size %} width="{{ hero_size.width }}" height="{{ hero_size.height }}"{% endif %} fetchpriority="high" decoding="async">
+      {%- assign hero_alt = image_description -%}
+      <img src="{{ page.header.image | relative_url }}" alt="{{ hero_alt }}" class="page__hero-image"{% if page.header.image_mobile and mobile_size and hero_size %} srcset="{{ page.header.image_mobile | relative_url }} {{ mobile_size.width }}w, {{ page.header.image | relative_url }} {{ hero_size.width }}w" sizes="100vw"{% endif %}{% if hero_size %} width="{{ hero_size.width }}" height="{{ hero_size.height }}"{% endif %} fetchpriority="high" decoding="async">
     </picture>
   {% endif %}
   {% if page.header.caption %}
