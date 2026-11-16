@@ -1,0 +1,12 @@
+/* TEAM */
+Author: Ivan Storck
+Site: https://www.ivanstorck.com
+Contact: ivan [at] ivanstorck.com
+Location: Seattle, Washington, USA
+
+/* SITE */
+Standards: HTML5, CSS3
+Components: Jekyll, Minimal Mistakes, Verdant design system
+Icons: Font Awesome Free (CC BY 4.0)
+Hosting: Netlify
+Checked with: wsg-check, https://wsg-check.com

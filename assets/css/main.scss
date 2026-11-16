@@ -514,3 +514,8 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* ---- Icons ---- */
+
+// Self-hosted Font Awesome subset; replaces the CDN stylesheet (see _sass/_icons.scss).
+@import "icons";

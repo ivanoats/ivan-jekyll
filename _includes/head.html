@@ -1,0 +1,31 @@
+{% assign locale = include.locale | default: site.locale %}
+<meta charset="utf-8">
+
+{% include seo.html locale=locale %}
+
+{% unless site.atom_feed.hide %}
+  <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+{% endunless %}
+
+{%- comment %} https://docs.google.com/presentation/d/1rmxwWa9P6_xHqonmh5ONXRS-jPc5XKbnv99Rjkhe04s/present {% endcomment -%}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  {% if site.enable_copy_code_button -%}
+    window.enable_copy_code_button = true;
+  {%- endif %}
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+{%- comment %} Override: the theme loads Font Awesome (all icons, unpinned) from a CDN here.
+     This site inlines the 15 icons it uses in _sass/_icons.scss instead. {% endcomment %}
+<link rel="author" type="text/plain" href="{{ '/humans.txt' | relative_url }}">
+<link rel="help" type="text/plain" href="{{ '/.well-known/security.txt' | relative_url }}">
+
+{% if site.head_scripts %}
+  {% for script in site.head_scripts %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
