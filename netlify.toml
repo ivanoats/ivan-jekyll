@@ -16,6 +16,10 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    # A baseline CSP that blocks plugins, <base> hijacking, framing, and off-site form posts
+    # without restricting scripts or frames: older posts embed YouTube, SlideShare,
+    # Speaker Deck, and gists. Tighten script-src once those embeds are reviewed.
+    Content-Security-Policy = "object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
 
 # Fingerprinted CSS gets a 1-year immutable cache — the hash in the filename
 # guarantees a new URL on every change, so browsers never serve stale CSS.
