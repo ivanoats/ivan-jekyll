@@ -34,17 +34,17 @@ The strongest evidence comes from four controlled studies, and they don't agree 
 | Study                         | Setting                                                             | Result              |
 | :---------------------------- | :------------------------------------------------------------------ | :------------------ |
 | Peng et al., 2023 (GitHub)    | 95 professional developers, one bounded JavaScript task             | 55.8% faster        |
-| Paradis et al., 2024 (Google) | 96 engineers, a complex multi-file task                             | 21% faster          |
+| Paradis et al., 2024 (Google) | 96 engineers, a complex enterprise-grade task                       | 21% faster          |
 | Cui et al., 2026              | Field experiments at Microsoft, Accenture and a Fortune 100 firm    | 26% more tasks done |
-| Becker et al., 2025 (METR)    | 16 experienced developers, 246 real tasks in their own mature repos | 19% slower          |
+| Becker et al., 2025 (METR)    | 16 experienced developers, 246 real tasks in mature projects        | 19% slower          |
 
-That 55.8% figure shows up in a lot of slide decks. It's the overall result for 95 professional developers on a single, well-bounded JavaScript task, and the less-experienced developers in that study gained the most. As the tasks get more complex and the developers know their codebase better, the gain shrinks. In the METR trial it reversed. Experienced open-source maintainers working in their own repositories were 19% slower with AI tools allowed, even though they and outside experts had predicted a speedup (Becker et al., 2025).
+That 55.8% figure shows up in a lot of slide decks. It's the overall result for 95 recruited professional developers (70 finished) on a single, well-bounded JavaScript task, and its confidence interval runs from 21% to 89%. The paper reports larger gains for less-experienced developers, though that effect falls just short of statistical significance. Google's trial found about 21%, also with a wide confidence interval. As the tasks get more complex and the developers know their codebase better, the gain shrinks. In the METR trial it reversed. Experienced open-source developers working on mature projects they knew well were 19% slower with AI tools allowed, even though they and outside experts had predicted a speedup (Becker et al., 2025).
 
 Xu et al. (2025) found the same split from another angle. AI-assisted programming raised productivity mostly for less-experienced developers, while core developers reviewed 6.5% more code and wrote 19% less original code of their own.
 
 ## More code merged, same delivery
 
-Farrag (2026) synthesizes 67 sources and names the pattern the productivity–reliability paradox. Telemetry across more than 10,000 developers shows a 98% increase in merged pull requests alongside a 91% increase in review time, and organizational delivery metrics that stay flat.
+Farrag (2026) synthesizes 67 sources, about a third of them preprints or industry reports, and names the pattern the productivity–reliability paradox. The headline numbers aren't Farrag's own data. They come from a 2025 Faros AI telemetry study of more than 10,000 developers, which Farrag cites. It shows a 98% increase in merged pull requests alongside a 91% increase in review time, and organizational delivery metrics that stay flat.
 
 The speed showed up in the editor and disappeared before it reached customers. It turned into a queue in front of the reviewers, who are usually the most senior people on the team.
 
@@ -55,15 +55,16 @@ Studies of whole-lifecycle enterprise deployments report the biggest gains:
 | Metric                                | Reported outcome                 | Study design                      |
 | :------------------------------------ | :------------------------------- | :-------------------------------- |
 | Cycle and lead time                   | 40–67% shorter                   | Case studies                      |
-| Lead time, governance-first DevSecOps | 39.2% shorter (Cohen's d = 1.32) | One deployment study              |
-| Deployment cycle time, GenOps         | 55.7% shorter                    | 15,847 deployments, one framework |
+| Lead time, AI-augmented DevSecOps     | 39.2% shorter (Cohen's d = 1.32) | One team, two sprints, no control |
+| Deployment cycle time, GenOps         | 55.7% shorter                    | 15,847 deployments, three orgs    |
 | Deployment frequency                  | Up to 20×                        | Case studies                      |
-| Defect rates in validation            | 41–90% lower                     | Case studies                      |
+| Issues reaching validation            | 74% fewer per 100 tasks          | One retrospective field study     |
+| Defect rates                          | Up to 90% lower                  | Multi-industry case studies       |
 | Legacy modernization effort           | 1,080 down to 232.5 person-days  | Modeled estimate, one field study |
 
-Sources: Karuppuchamy (2026), Kumar (2023), the 2025 JCSTS and 2026 F1000Research papers, Beshane (2026), Aluri (2025), Armesto and Kolb (2026).
+Sources: Karuppuchamy (2026), Kumar (2023), Ganapathi (2025), Gunawan et al. (2026), Beshane (2026), Aluri (2025), Armesto and Kolb (2026).
 
-None of these had randomized controls, so cause and effect are uncertain. I read them as what's possible in a well-governed pipeline, not what a team should expect. It's worth noticing that the governance-first designs report some of the strongest results.
+None of these had randomized controls, so cause and effect are uncertain. Some are thinner than they look. The DevSecOps study covers one team over two sprints, and in places its text calls its own baseline hypothetical. The authors of the modernization study are executives at the company that built the orchestration platform it evaluates. I read them as what's possible in a well-governed pipeline, not what a team should expect. It's worth noticing that the governance-first designs report some of the strongest results.
 
 ## The bill arrives after the sprint
 
@@ -81,9 +82,9 @@ In fairness, the quality evidence is contested. A preregistered experiment with 
 
 This is the section I'd most want an engineering manager to read.
 
-Blain and Noiseux (2026) formally verified 3,500 AI-generated artifacts. 55.8% had at least one vulnerability. No model scored better than a D, and explicitly asking for secure code lowered the vulnerability rate by only four percentage points.
+Blain and Noiseux (2026) ran 3,500 AI-generated artifacts through a formal-methods analysis tool, and 55.8% had at least one vulnerability. Not every finding was formally proven, but 1,055 were. No model scored better than a D. In a smaller test of 50 prompts, explicitly asking for secure code lowered the vulnerability rate by only four percentage points.
 
-Developers with an AI assistant wrote less secure code than a control group and were more likely to believe their code was secure (Perry et al., 2022).
+In a user study of 47 people, those with an AI assistant wrote less secure code than a control group and were more likely to believe their code was secure (Perry et al., 2022).
 
 Agent context files tell the same story. In a study of files like AGENTS.md and CLAUDE.md, developers mostly described test procedures (75.9%), implementation details (70.8%) and architecture (68.1%). Only 14.8% said anything about security, and 14.5% about performance (Chatlatanagulchai et al., 2025). If you keep one of these files, open it and search for the word "security." It takes ten seconds.
 
@@ -105,13 +106,13 @@ The claim most vendor pitches lean on is the bottom row, and it's the weakest on
 
 It's also worth asking who's counting. A metric like "task time saved" counts the time an engineer spends finishing the task, including debugging and checking the generated output. It doesn't count the reviewer's afternoon, the on-call engineer's 2 a.m. page, or the maintainer who inherits the code next year. Those costs still exist. They just land on different people, and the review-time numbers above say they land mostly on the senior ones.
 
-Both reviews came from [Consensus](https://consensus.app), an AI research search engine, and several of the sources are 2026 arXiv preprints that haven't been through peer review. They make a good reading list. Go to the primary paper before you cite a number.
+Both reviews came from [Consensus](https://consensus.app), an AI research search engine, and several of the sources are 2026 arXiv preprints that haven't been through peer review. I checked the figures in this post against the papers themselves, and the summaries got several details wrong: who was studied, whether numbers were measured or modeled, whose data it was, even one paper's first author. I've corrected those here. I couldn't read Karuppuchamy (2026), He et al. (2025), Afroz et al. (2025), Borg et al. (2026) or Cui et al. (2026) past their paywalls, so those figures are as the review reported them. Go to the primary paper before you cite a number.
 
-## The stability–velocity paradox
+## Non-deterministic code, deterministic production
 
-Bhati (2026) names the underlying tension the stability–velocity paradox. Large language models are non-deterministic. Production systems can't be. The property that makes generation fast, sampling from a distribution, is the same property that produces plausible-but-wrong code, and the wrong code arrives as fast as the good code does (Bhati, 2026; Daud et al., 2026).
+The first review calls the underlying tension a stability–velocity paradox and credits the phrase to Bhati (2026). I couldn't find that phrase in Bhati's paper, so take it as the review's label. The idea holds up either way. Large language models are non-deterministic. Production systems can't be. The property that makes generation fast, sampling from a distribution, is the same property that produces plausible-but-wrong code, and the wrong code arrives as fast as the good code does.
 
-Farrag's review-time numbers show what happens when human review is the only thing standing in the path. Something deterministic has to sit there too.
+The review-time numbers above show what happens when human review is the only thing standing in the path. Something deterministic has to sit there too.
 
 ## From assistants to orchestration
 
@@ -119,7 +120,7 @@ The reviews draw a line between two ways of using AI.
 
 The first is the isolated coding assistant: one engineer, one editor, one step sped up. Context resets at every handoff, so the gains stay fragmented.
 
-The second is end-to-end orchestration. An orchestrator coordinates specialized sub-agents across requirements, design, build, test and operations, and carries context from one phase to the next. That's where the case studies report the largest gains (Armesto & Kolb, 2026; Arifin, 2026; JCSTS, 2025). The second review rates this claim moderate, because none of those studies had randomized controls.
+The second is end-to-end orchestration. An orchestrator coordinates specialized sub-agents across requirements, design, build, test and operations, and carries context from one phase to the next. That's where the case studies report the largest gains (Armesto & Kolb, 2026; Arifin, 2026; Ganapathi, 2025). The second review rates this claim moderate, because none of those studies had randomized controls.
 
 Bhati's comparison of the two flows is worth looking at for one detail in particular: where the humans sit. In the traditional SDLC, people do the work at every phase and pass it along. In the agentic version, people supervise at gates. They set the intent at the start, review what comes back, and approve what goes to production.
 
@@ -143,14 +144,14 @@ This is the same instinct behind [wsg-check](https://github.com/ivanoats/wsg-che
 
 ## Five governance patterns
 
-The second review collects five named patterns. I'm listing their claimed results with a caveat: most of these effect sizes come from the frameworks' own authors, and independent replication is limited.
+The second review collects five named patterns. I'm listing their claimed results with a caveat: these effect sizes come from the frameworks' own authors or from single case studies they cite, and independent replication is limited. Alenezi says outright that no causal claim in the paper was tested by an experiment.
 
 | Pattern                                                 | How it works                                                                                                                          | Claimed result                                                  |
 | :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------- |
-| Specification-Driven Development (Alenezi, 2026a)       | Machine-readable contracts and deterministic validation gates                                                                         | 73% fewer security defects, 50% shorter time to market          |
+| Specification-Driven Development (Alenezi, 2026a)       | Machine-readable contracts and deterministic validation gates                                                                         | 73% fewer security defects, about half the time to market, both from single case studies it cites |
 | Spec-Driven Agentic Development (Nguyen & Nguyen, 2026) | Intent, spec, agentic synthesis, multi-agent verification, human sign-off                                                             | Separates synthesis from release authority                      |
-| Cognitive Software Delivery (JCSTS, 2025)               | Context mesh, Model Context Protocol, RAG and agent-to-agent orchestration                                                            | Up to two-thirds shorter cycle time, up to 90% fewer defects    |
-| Governed AI-Assisted Engineering (Kang, 2026)           | Oversight tiered by risk: humans in the loop for strategic work, over the loop for customer-facing work, automation for internal work | Keeps 84–97% of agentic velocity, from analytical modeling      |
+| Cognitive Software Delivery (Ganapathi, 2025)           | Context mesh, Model Context Protocol, RAG and agent-to-agent orchestration                                                            | Up to two-thirds shorter cycle time, up to 90% fewer defects    |
+| Governed AI-Assisted Engineering (Kang, 2026)           | Oversight tiered by risk: humans in the loop for strategic work, over the loop for customer-facing work, automation with monitoring for internal work | Keeps 84–97% of agentic velocity, from analytical modeling      |
 | GenOps (Beshane, 2026)                                  | Guardrailed planning, staged canary rollouts, immutable audit logs                                                                    | Zero safety policy violations, 47.2% less error-budget variance |
 
 The tiered-oversight idea in GAIE is the one I'd steal first. Not every change deserves the same amount of human attention, and giving every change the same review is one way review time balloons.
@@ -165,7 +166,7 @@ Second, move discipline upstream. Rigor used to live mostly in code review. Now 
 
 Third, close the observability loop. Runtime telemetry, anomaly prediction and automated policy checks should feed back into the pipeline, not sit in a dashboard nobody opens (Eramo et al., 2024; Venkataraman et al., 2026).
 
-Fourth, anchor the architecture. Keep humans on high-risk system design and deployment boundaries. In one 60-day case study, people handled about 90% of architectural design tasks and AI about 85% of basic implementation, and AI's share dropped wherever reliability and system constraints mattered most (Daud et al., 2026).
+Fourth, anchor the architecture. Keep humans on high-risk system design and deployment boundaries. In one 60-day case study, people were the main contributors to architectural design, at about 90%, and AI handled about 85% of basic syntax work. AI's share dropped wherever reliability and system constraints mattered most (Fawwazie et al., 2026).
 
 ## What it means for your role
 
@@ -209,8 +210,6 @@ That's enough to learn from. The keel can get deeper once you know how much sail
 
 Both reviews were found and analyzed with [Consensus](https://consensus.app). This post paraphrases their findings and points to the underlying papers.
 
-- (Unattributed). (2025). AI-Driven Product Development: Cognitive Software Delivery at Enterprise Scale. _Journal of Computer Science and Technology Studies_. <https://doi.org/10.32996/jcsts.2025.7.8.99>
-- (Unattributed). (2026). Assessing the Impact of AI-Augmented DevSecOps on Lead Time in Agile Release Management. _F1000Research_. <https://doi.org/10.12688/f1000research.178067.1>
 - Afroz, S., Feng, Z.-X., Menezes, T., Kimura, K., Trinkenreich, B., Steinmacher, I., & Sarma, A. (2025). The Fast and Spurious: Developer Productivity with GenAI. _Proceedings of the 34th ACM International Conference on the Foundations of Software Engineering_. <https://doi.org/10.1145/3803437.3806710>
 - Alenezi, M. (2026a). Specification-Driven Development as the Foundation of AI-Native Enterprise Software Engineering. _arXiv, abs/2607.16680_. <https://doi.org/10.48550/arxiv.2607.16680>
 - Alenezi, M. (2026b). How AI Changes DevOps Performance: A Mechanism-Based Simulation.
@@ -227,9 +226,11 @@ Both reviews were found and analyzed with [Consensus](https://consensus.app). Th
 - Bucaioni, A., Weyssow, M., He, J.-D., Lyu, Y., & Lo, D. (2025). Artificial Intelligence Support for Software Architecture Practice: A Systematic Review and Future Directions. _ACM Transactions on Software Engineering and Methodology, 35_, 1–36. <https://doi.org/10.1145/3828546>
 - Chatlatanagulchai, W., Li, H., Kashiwa, Y., Reid, B., Thonglek, K., Leelaprute, P., Rungsawang, A., Manaskasemsak, B., Adams, B., Hassan, A. E., & Iida, H. (2025). Agent READMEs: An Empirical Study of Context Files for Agentic Coding. _ACM Transactions on Software Engineering and Methodology_. <https://doi.org/10.1145/3840295>
 - Cui, K., Demirer, M., Jaffe, S., Musolff, L., Peng, S.-D., & Salz, T. (2026). The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers. _Management Science_. <https://doi.org/10.1287/mnsc.2025.00535>
-- Daud, N., Rabani, M. I., & Supriyanto, B. F. (2026). Hybrid Human AI SDLC for Rapid SaaS Development: Evidence from a 60 Days Case Study. _Edumatic: Jurnal Pendidikan Informatika_. <https://doi.org/10.29408/edumatic.v10i1.34361>
 - Eramo, R., Said, B., Oriol, M., Bruneliere, H., & Morales, S. (2024). An architecture for model-based and intelligent automation in DevOps. _Journal of Systems and Software, 217_, 112180. <https://doi.org/10.1016/j.jss.2024.112180>
 - Farrag, S. E. (2026). The Productivity-Reliability Paradox: Specification-Driven Governance for AI-Augmented Software Development. _arXiv, abs/2605.01160_. <https://doi.org/10.48550/arxiv.2605.01160>
+- Fawwazie, M. H. H., Daud, N., et al. (2026). Hybrid Human AI SDLC for Rapid SaaS Development: Evidence from a 60 Days Case Study. _Edumatic: Jurnal Pendidikan Informatika_. <https://doi.org/10.29408/edumatic.v10i1.34361>
+- Ganapathi, J. K. (2025). AI-Driven Product Development: Cognitive Software Delivery at Enterprise Scale. _Journal of Computer Science and Technology Studies_. <https://doi.org/10.32996/jcsts.2025.7.8.99>
+- Gunawan, J. A., Singgih, M. L., & Hari, G. R. V. (2026). Assessing the Impact of AI-Augmented DevSecOps on Lead Time in Agile Release Management. _F1000Research_. <https://doi.org/10.12688/f1000research.178067.1>
 - He, H., Miller, C., Agarwal, S., Kästner, C., & Vasilescu, B. (2025). Speed at the Cost of Quality: How Cursor AI Increases Short-Term Velocity and Long-Term Complexity in Open-Source Projects. _Proceedings of the 23rd International Conference on Mining Software Repositories_. <https://doi.org/10.1145/3793302.3793349>
 - Kang, R. (2026). Governed AI-Assisted Engineering: Graduated Human Oversight for Agentic Code Generation in Regulated Domains. _arXiv, abs/2606.22484_. <https://doi.org/10.48550/arxiv.2606.22484>
 - Karuppuchamy, S. (2026). AI-Augmented Software Engineering for Rapid Feature Delivery and Operations Automation. _2026 IEEE 16th Annual Computing and Communication Workshop and Conference (CCWC)_, 0607–0614. <https://doi.org/10.1109/ccwc67433.2026.11393761>
