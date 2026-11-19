@@ -17,7 +17,7 @@ I kept coming back to that picture while reading two research reviews on AI acro
 
 Both land in the same place. AI across the lifecycle can make delivery faster, but only when specification discipline and architectural governance are treated as real engineering work. Without them, you get a short burst of speed and a long tail of complexity, security flaws and debt.
 
-This post is for the people who have to live with that: software engineers, engineering managers, and the product and program managers who plan around what engineering says it can deliver. There's also a [slide deck version](https://claude.ai/artifact/U9sZBctoF2Hs7Z5sQvyiPz) if you want to walk a team through it.
+This post is for the people who have to live with that: software engineers, engineering managers, and the product and program managers who plan around what engineering says it can deliver.
 
 ## Two findings, held together
 
