@@ -21,7 +21,7 @@ gem 'liquid-c'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem 'jekyll-feed', '~> 0.16', '>= 0.16.0'
+  gem 'jekyll-feed', '~> 0.18'
   gem 'jekyll-include-cache', '>= 0.2.1'
   gem 'jekyll-purgecss'
   #  gem 'jekyll-responsive-image'
@@ -32,7 +32,7 @@ end
 
 # Build tool
 gem 'rake'
-gem 'rubocop', '~> 1.87'
+gem 'rubocop', '~> 1.92'
 gem 'webrick', '~> 1.8'
 
 gem 'jekyll-sass-converter', '~> 3.1'
